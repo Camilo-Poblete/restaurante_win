@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.Error = new System.Windows.Forms.Label();
             this.BtnOlvidarContra = new System.Windows.Forms.Button();
@@ -39,13 +41,11 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.BarraTitulo.SuspendLayout();
-            this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -55,12 +55,38 @@
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(975, 36);
+            this.BarraTitulo.Size = new System.Drawing.Size(1300, 44);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Image = global::Diseño.Properties.Resources.minimazar;
+            this.btnMinimizar.Location = new System.Drawing.Point(1227, 2);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(29, 34);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Image = global::Diseño.Properties.Resources.cerrar;
+            this.btnCerrar.Location = new System.Drawing.Point(1263, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(35, 34);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // panelContenedor
             // 
@@ -75,19 +101,20 @@
             this.panelContenedor.Controls.Add(this.label1);
             this.panelContenedor.Controls.Add(this.pictureBox1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 36);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 44);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(975, 492);
+            this.panelContenedor.Size = new System.Drawing.Size(1300, 606);
             this.panelContenedor.TabIndex = 2;
             // 
             // Error
             // 
             this.Error.AutoSize = true;
             this.Error.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.Error.Location = new System.Drawing.Point(523, 312);
+            this.Error.Location = new System.Drawing.Point(697, 384);
+            this.Error.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Error.Name = "Error";
-            this.Error.Size = new System.Drawing.Size(29, 13);
+            this.Error.Size = new System.Drawing.Size(40, 17);
             this.Error.TabIndex = 10;
             this.Error.Text = "Error";
             // 
@@ -100,9 +127,10 @@
             this.BtnOlvidarContra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnOlvidarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOlvidarContra.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnOlvidarContra.Location = new System.Drawing.Point(343, 384);
+            this.BtnOlvidarContra.Location = new System.Drawing.Point(457, 473);
+            this.BtnOlvidarContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnOlvidarContra.Name = "BtnOlvidarContra";
-            this.BtnOlvidarContra.Size = new System.Drawing.Size(233, 27);
+            this.BtnOlvidarContra.Size = new System.Drawing.Size(311, 33);
             this.BtnOlvidarContra.TabIndex = 9;
             this.BtnOlvidarContra.Text = "¿Has olvidado tu contraseña?.";
             this.BtnOlvidarContra.UseVisualStyleBackColor = false;
@@ -111,19 +139,18 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(424, 337);
-            this.lblError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblError.Location = new System.Drawing.Point(565, 415);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 17);
             this.lblError.TabIndex = 6;
             // 
             // ChkMostrar
             // 
             this.ChkMostrar.AutoSize = true;
-            this.ChkMostrar.Location = new System.Drawing.Point(588, 232);
-            this.ChkMostrar.Margin = new System.Windows.Forms.Padding(2);
+            this.ChkMostrar.Location = new System.Drawing.Point(784, 286);
+            this.ChkMostrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChkMostrar.Name = "ChkMostrar";
-            this.ChkMostrar.Size = new System.Drawing.Size(118, 17);
+            this.ChkMostrar.Size = new System.Drawing.Size(155, 21);
             this.ChkMostrar.TabIndex = 5;
             this.ChkMostrar.Text = "Mostrar Contraseña";
             this.ChkMostrar.UseVisualStyleBackColor = true;
@@ -133,10 +160,10 @@
             // 
             this.BtnAcceder.BackColor = System.Drawing.Color.SaddleBrown;
             this.BtnAcceder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnAcceder.Location = new System.Drawing.Point(358, 288);
-            this.BtnAcceder.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnAcceder.Location = new System.Drawing.Point(477, 354);
+            this.BtnAcceder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnAcceder.Name = "BtnAcceder";
-            this.BtnAcceder.Size = new System.Drawing.Size(160, 37);
+            this.BtnAcceder.Size = new System.Drawing.Size(213, 46);
             this.BtnAcceder.TabIndex = 4;
             this.BtnAcceder.Text = "Acceder";
             this.BtnAcceder.UseVisualStyleBackColor = false;
@@ -146,10 +173,10 @@
             // 
             this.TxtContrasena.BackColor = System.Drawing.Color.Moccasin;
             this.TxtContrasena.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtContrasena.Location = new System.Drawing.Point(284, 231);
-            this.TxtContrasena.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtContrasena.Location = new System.Drawing.Point(379, 284);
+            this.TxtContrasena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtContrasena.Name = "TxtContrasena";
-            this.TxtContrasena.Size = new System.Drawing.Size(301, 20);
+            this.TxtContrasena.Size = new System.Drawing.Size(400, 22);
             this.TxtContrasena.TabIndex = 3;
             this.TxtContrasena.Text = "Contraseña";
             // 
@@ -157,10 +184,10 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.Moccasin;
             this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsuario.Location = new System.Drawing.Point(284, 182);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsuario.Location = new System.Drawing.Point(379, 224);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(301, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(400, 22);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.Text = "Usuario";
             // 
@@ -169,10 +196,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(353, 95);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(471, 117);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 31);
+            this.label1.Size = new System.Drawing.Size(212, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "Iniciar Sesion";
             // 
@@ -180,57 +206,31 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Chocolate;
             this.pictureBox1.Image = global::Diseño.Properties.Resources.restaurant;
-            this.pictureBox1.Location = new System.Drawing.Point(831, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(1108, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 493);
+            this.pictureBox1.Size = new System.Drawing.Size(192, 607);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Image = global::Diseño.Properties.Resources.minimazar;
-            this.btnMinimizar.Location = new System.Drawing.Point(920, 2);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(22, 28);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = global::Diseño.Properties.Resources.cerrar;
-            this.btnCerrar.Location = new System.Drawing.Point(947, 3);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(26, 28);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(975, 528);
+            this.ClientSize = new System.Drawing.Size(1300, 650);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.BarraTitulo);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.Text = "Restaurante";
             this.BarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
