@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.Error = new System.Windows.Forms.Label();
             this.BtnOlvidarContra = new System.Windows.Forms.Button();
@@ -41,11 +39,13 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.BarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -62,35 +62,9 @@
             this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Image = global::Diseño.Properties.Resources.minimazar;
-            this.btnMinimizar.Location = new System.Drawing.Point(1227, 2);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(29, 34);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = global::Diseño.Properties.Resources.cerrar;
-            this.btnCerrar.Location = new System.Drawing.Point(1263, 4);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(35, 34);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelContenedor.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panelContenedor.Controls.Add(this.Error);
             this.panelContenedor.Controls.Add(this.BtnOlvidarContra);
             this.panelContenedor.Controls.Add(this.lblError);
@@ -106,6 +80,7 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1300, 606);
             this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // Error
             // 
@@ -120,15 +95,15 @@
             // 
             // BtnOlvidarContra
             // 
-            this.BtnOlvidarContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.BtnOlvidarContra.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BtnOlvidarContra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnOlvidarContra.FlatAppearance.BorderSize = 0;
             this.BtnOlvidarContra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnOlvidarContra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnOlvidarContra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOlvidarContra.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnOlvidarContra.Location = new System.Drawing.Point(457, 473);
-            this.BtnOlvidarContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnOlvidarContra.Location = new System.Drawing.Point(452, 436);
+            this.BtnOlvidarContra.Margin = new System.Windows.Forms.Padding(4);
             this.BtnOlvidarContra.Name = "BtnOlvidarContra";
             this.BtnOlvidarContra.Size = new System.Drawing.Size(311, 33);
             this.BtnOlvidarContra.TabIndex = 9;
@@ -158,7 +133,7 @@
             // 
             // BtnAcceder
             // 
-            this.BtnAcceder.BackColor = System.Drawing.Color.SaddleBrown;
+            this.BtnAcceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.BtnAcceder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnAcceder.Location = new System.Drawing.Point(477, 354);
             this.BtnAcceder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -172,7 +147,7 @@
             // TxtContrasena
             // 
             this.TxtContrasena.BackColor = System.Drawing.Color.Moccasin;
-            this.TxtContrasena.ForeColor = System.Drawing.Color.DimGray;
+            this.TxtContrasena.ForeColor = System.Drawing.Color.Black;
             this.TxtContrasena.Location = new System.Drawing.Point(379, 284);
             this.TxtContrasena.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtContrasena.Name = "TxtContrasena";
@@ -183,7 +158,7 @@
             // txtUsuario
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.Moccasin;
-            this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
             this.txtUsuario.Location = new System.Drawing.Point(379, 224);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
@@ -194,9 +169,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(471, 117);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(478, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 38);
             this.label1.TabIndex = 1;
@@ -204,7 +180,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Chocolate;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.pictureBox1.Image = global::Diseño.Properties.Resources.restaurant;
             this.pictureBox1.Location = new System.Drawing.Point(1108, -1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -213,6 +189,32 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Image = global::Diseño.Properties.Resources.minimazar;
+            this.btnMinimizar.Location = new System.Drawing.Point(1227, 2);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(29, 34);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Image = global::Diseño.Properties.Resources.cerrar;
+            this.btnCerrar.Location = new System.Drawing.Point(1263, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(35, 34);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // Login
             // 
@@ -226,11 +228,11 @@
             this.Name = "Login";
             this.Text = "Restaurante";
             this.BarraTitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

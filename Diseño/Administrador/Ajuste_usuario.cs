@@ -40,15 +40,7 @@ namespace Diseño
 
         private void Cargar_Informacion_Usuario()
         {
-            TxtNombres.Text = CacheInicioSesion.Nombres;
-            TxtApellidos.Text = CacheInicioSesion.Apellidos;
-            TxtRut.Text = CacheInicioSesion.Rut;
-            TxtLogin.Text = CacheInicioSesion.Login;
-            TxtClave.Text = CacheInicioSesion.Clave;
-            TxtFono.Text = CacheInicioSesion.Fono;
-            TxtEmail.Text = CacheInicioSesion.Email;
-            CbxEstado.Text = CacheInicioSesion.Estado;
-            CbxRol.Text = CacheInicioSesion.Rol;
+            
 
         }
 
@@ -86,51 +78,8 @@ namespace Diseño
         }
 
 
-        private void TxtNombres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            Acceso ac = new Acceso();
-            var conn = ac.Conectar();
-            conn.Open();
-
-            using (OracleCommand command = new OracleCommand("modificar_usuarios", conn))
-            {
-                string message = "¿Estas seguro de modificar el usuario?.";
-                string caption = "Modificacion de usuarios.";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
-
-                int id = CacheInicioSesion.ID;
-                int rol = CacheInicioSesion.Rol_id;
-
-                result = MessageBox.Show(message, caption, buttons);
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.Add("v_id", OracleDbType.Int32).Value = id;
-                    command.Parameters.Add("v_nombre", OracleDbType.Varchar2).Value = TxtNombres.Text;
-                    command.Parameters.Add("v_apellido", OracleDbType.Varchar2).Value = TxtApellidos.Text;
-                    command.Parameters.Add("v_rut", OracleDbType.Varchar2,12).Value = TxtRut.Text;
-                    command.Parameters.Add("v_login", OracleDbType.Varchar2).Value = TxtLogin.Text;
-                    command.Parameters.Add("v_clave", OracleDbType.Varchar2).Value = TxtClave.Text;
-                    command.Parameters.Add("v_email", OracleDbType.Varchar2).Value = TxtEmail.Text;
-                    command.Parameters.Add("v_fono", OracleDbType.Varchar2).Value = TxtFono.Text;
-                    command.Parameters.Add("c_rol", OracleDbType.Int32).Value = rol;
-                    command.Parameters.Add("c_estado", OracleDbType.Varchar2).Value = CbxEstado.Text;
-
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Se modificaron correctamente los registros.");
-
-                }
-
-
-            }
-
-
 
         }
     }

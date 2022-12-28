@@ -51,7 +51,6 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csproj.
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csproj.CopyComplete
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.exe
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.pdb
-C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csproj.AssemblyReference.cache
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Login.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\bin\Debug\Acceso_Datos.exe
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\bin\Debug\Acceso_Datos.pdb
@@ -64,8 +63,6 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Panel_A
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Recuperar.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.productos.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.Ajustes.resources
-C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.Empleados.resources
-C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Registo_Clientes.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Bodega_r.Compra_Stock.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Cocinero_r.Pedidos_Cocina.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Finanzas_r.Caja.resources
@@ -73,3 +70,6 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzone
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Bodega_r.Stock.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Ajuste_usuario.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Reportes.Reporte_ventas.resources
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csprojAssemblyReference.cache
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Registro_Cliente.resources
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Empleados.resources
