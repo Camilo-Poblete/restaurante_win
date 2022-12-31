@@ -125,6 +125,12 @@
     <Compile Include="Administrador\Ajuste_usuario.Designer.cs">
       <DependentUpon>Ajuste_usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\productos.Designer.cs">
+      <DependentUpon>productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bodega_r\Compra_Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,17 +167,11 @@
     <Compile Include="Garzones_r\Ingresar_Pedido.Designer.cs">
       <DependentUpon>Ingresar_Pedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Garzones_r\Registro_Cliente.cs">
+    <Compile Include="Garzones_r\Registro_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Garzones_r\Registro_Cliente.Designer.cs">
-      <DependentUpon>Registro_Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="productos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="productos.Designer.cs">
-      <DependentUpon>productos.cs</DependentUpon>
+    <Compile Include="Garzones_r\Registro_Clientes.Designer.cs">
+      <DependentUpon>Registro_Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Bodega_r\Bodega_restau.cs">
       <SubType>Form</SubType>
@@ -232,6 +232,9 @@
     <EmbeddedResource Include="Administrador\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\productos.resx">
+      <DependentUpon>productos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bodega_r\Compra_Stock.resx">
       <DependentUpon>Compra_Stock.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,11 +250,8 @@
     <EmbeddedResource Include="Garzones_r\Ingresar_Pedido.resx">
       <DependentUpon>Ingresar_Pedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Garzones_r\Registro_Cliente.resx">
-      <DependentUpon>Registro_Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="productos.resx">
-      <DependentUpon>productos.cs</DependentUpon>
+    <EmbeddedResource Include="Garzones_r\Registro_Clientes.resx">
+      <DependentUpon>Registro_Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bodega_r\Bodega_restau.resx">
       <DependentUpon>Bodega_restau.cs</DependentUpon>
@@ -425,6 +425,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloading1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

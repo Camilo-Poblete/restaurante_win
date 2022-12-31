@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.BtnEliminados = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,9 +41,7 @@
             this.PnlFormulario = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.BtnGuardar = new System.Windows.Forms.Button();
             this.LblEstado = new System.Windows.Forms.Label();
-            this.BtnGuardarCambios = new System.Windows.Forms.Button();
             this.LblTitulo = new System.Windows.Forms.Label();
             this.CbxEstado = new System.Windows.Forms.ComboBox();
             this.LblRol = new System.Windows.Forms.Label();
@@ -62,8 +61,9 @@
             this.LblRut = new System.Windows.Forms.Label();
             this.TxtRut = new System.Windows.Forms.TextBox();
             this.BtnCerrar = new System.Windows.Forms.Button();
+            this.BtnGuardar = new System.Windows.Forms.Button();
+            this.BtnGuardarCambios = new System.Windows.Forms.Button();
             this.DtEliminados = new System.Windows.Forms.DataGridView();
-            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,6 +96,18 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 55);
             this.tableLayoutPanel2.TabIndex = 11;
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnVolver.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnVolver.ForeColor = System.Drawing.Color.White;
+            this.BtnVolver.Location = new System.Drawing.Point(803, 14);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(136, 26);
+            this.BtnVolver.TabIndex = 16;
+            this.BtnVolver.Text = "VOLVER";
+            this.BtnVolver.UseVisualStyleBackColor = false;
             // 
             // BtnEliminados
             // 
@@ -163,14 +175,14 @@
             this.DtListaEmpleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.DtListaEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.DtListaEmpleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtListaEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtListaEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DtListaEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtListaEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DtListaEmpleados.EnableHeadersVisualStyles = false;
@@ -181,11 +193,11 @@
             this.DtListaEmpleados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DtListaEmpleados.RowHeadersVisible = false;
             this.DtListaEmpleados.RowHeadersWidth = 51;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
-            this.DtListaEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DtListaEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DtListaEmpleados.RowTemplate.Height = 24;
             this.DtListaEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DtListaEmpleados.ShowCellToolTips = false;
@@ -259,24 +271,11 @@
             // TxtNombre
             // 
             this.TxtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtNombre.Location = new System.Drawing.Point(180, 56);
+            this.TxtNombre.Location = new System.Drawing.Point(179, 56);
             this.TxtNombre.Multiline = true;
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(560, 33);
+            this.TxtNombre.Size = new System.Drawing.Size(559, 33);
             this.TxtNombre.TabIndex = 1;
-            // 
-            // BtnGuardar
-            // 
-            this.BtnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.BtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.Location = new System.Drawing.Point(364, 556);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(191, 39);
-            this.BtnGuardar.TabIndex = 12;
-            this.BtnGuardar.Text = "GUARDAR";
-            this.BtnGuardar.UseVisualStyleBackColor = false;
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click_1);
             // 
             // LblEstado
             // 
@@ -285,24 +284,11 @@
             this.LblEstado.BackColor = System.Drawing.Color.DarkSlateGray;
             this.LblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEstado.ForeColor = System.Drawing.Color.White;
-            this.LblEstado.Location = new System.Drawing.Point(52, 502);
+            this.LblEstado.Location = new System.Drawing.Point(51, 502);
             this.LblEstado.Name = "LblEstado";
             this.LblEstado.Size = new System.Drawing.Size(73, 20);
             this.LblEstado.TabIndex = 3;
             this.LblEstado.Text = "Estado:";
-            // 
-            // BtnGuardarCambios
-            // 
-            this.BtnGuardarCambios.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnGuardarCambios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.BtnGuardarCambios.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardarCambios.Location = new System.Drawing.Point(371, 639);
-            this.BtnGuardarCambios.Name = "BtnGuardarCambios";
-            this.BtnGuardarCambios.Size = new System.Drawing.Size(178, 38);
-            this.BtnGuardarCambios.TabIndex = 11;
-            this.BtnGuardarCambios.Text = "GUARDAR CAMBIOS";
-            this.BtnGuardarCambios.UseVisualStyleBackColor = false;
-            this.BtnGuardarCambios.Click += new System.EventHandler(this.BtnGuardarCambios_Click_1);
             // 
             // LblTitulo
             // 
@@ -312,7 +298,7 @@
             this.LblTitulo.BackColor = System.Drawing.Color.DarkSlateGray;
             this.LblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitulo.ForeColor = System.Drawing.Color.White;
-            this.LblTitulo.Location = new System.Drawing.Point(180, 0);
+            this.LblTitulo.Location = new System.Drawing.Point(179, 0);
             this.LblTitulo.Name = "LblTitulo";
             this.LblTitulo.Size = new System.Drawing.Size(240, 46);
             this.LblTitulo.TabIndex = 0;
@@ -329,9 +315,9 @@
             "--SELECCIONE UN ESTADO--",
             "Activo",
             "Eliminado"});
-            this.CbxEstado.Location = new System.Drawing.Point(180, 500);
+            this.CbxEstado.Location = new System.Drawing.Point(179, 500);
             this.CbxEstado.Name = "CbxEstado";
-            this.CbxEstado.Size = new System.Drawing.Size(560, 24);
+            this.CbxEstado.Size = new System.Drawing.Size(559, 24);
             this.CbxEstado.TabIndex = 9;
             // 
             // LblRol
@@ -341,7 +327,7 @@
             this.LblRol.BackColor = System.Drawing.Color.DarkSlateGray;
             this.LblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRol.ForeColor = System.Drawing.Color.White;
-            this.LblRol.Location = new System.Drawing.Point(67, 445);
+            this.LblRol.Location = new System.Drawing.Point(66, 445);
             this.LblRol.Name = "LblRol";
             this.LblRol.Size = new System.Drawing.Size(43, 20);
             this.LblRol.TabIndex = 3;
@@ -375,9 +361,9 @@
             "FINANZAS",
             "GARZON",
             "BODEGA"});
-            this.CbxRol.Location = new System.Drawing.Point(180, 443);
+            this.CbxRol.Location = new System.Drawing.Point(179, 443);
             this.CbxRol.Name = "CbxRol";
-            this.CbxRol.Size = new System.Drawing.Size(560, 24);
+            this.CbxRol.Size = new System.Drawing.Size(559, 24);
             this.CbxRol.TabIndex = 8;
             this.CbxRol.TextChanged += new System.EventHandler(this.CbxRol_TextChanged_1);
             // 
@@ -397,7 +383,7 @@
             // TxtID
             // 
             this.TxtID.Enabled = false;
-            this.TxtID.Location = new System.Drawing.Point(746, 3);
+            this.TxtID.Location = new System.Drawing.Point(744, 3);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(50, 22);
             this.TxtID.TabIndex = 7;
@@ -406,11 +392,11 @@
             // TxtFono
             // 
             this.TxtFono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtFono.Location = new System.Drawing.Point(180, 382);
+            this.TxtFono.Location = new System.Drawing.Point(179, 382);
             this.TxtFono.MaxLength = 12;
             this.TxtFono.Multiline = true;
             this.TxtFono.Name = "TxtFono";
-            this.TxtFono.Size = new System.Drawing.Size(560, 33);
+            this.TxtFono.Size = new System.Drawing.Size(559, 33);
             this.TxtFono.TabIndex = 7;
             // 
             // LblEmail
@@ -429,10 +415,10 @@
             // TxtEmail
             // 
             this.TxtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtEmail.Location = new System.Drawing.Point(180, 325);
+            this.TxtEmail.Location = new System.Drawing.Point(179, 325);
             this.TxtEmail.Multiline = true;
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(560, 33);
+            this.TxtEmail.Size = new System.Drawing.Size(559, 33);
             this.TxtEmail.TabIndex = 6;
             // 
             // LblContrasena
@@ -442,7 +428,7 @@
             this.LblContrasena.BackColor = System.Drawing.Color.DarkSlateGray;
             this.LblContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblContrasena.ForeColor = System.Drawing.Color.White;
-            this.LblContrasena.Location = new System.Drawing.Point(33, 274);
+            this.LblContrasena.Location = new System.Drawing.Point(32, 274);
             this.LblContrasena.Name = "LblContrasena";
             this.LblContrasena.Size = new System.Drawing.Size(111, 20);
             this.LblContrasena.TabIndex = 3;
@@ -464,19 +450,19 @@
             // TxtContrasena
             // 
             this.TxtContrasena.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtContrasena.Location = new System.Drawing.Point(180, 268);
+            this.TxtContrasena.Location = new System.Drawing.Point(179, 268);
             this.TxtContrasena.Multiline = true;
             this.TxtContrasena.Name = "TxtContrasena";
-            this.TxtContrasena.Size = new System.Drawing.Size(560, 33);
+            this.TxtContrasena.Size = new System.Drawing.Size(559, 33);
             this.TxtContrasena.TabIndex = 5;
             // 
             // TxtApellido
             // 
             this.TxtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtApellido.Location = new System.Drawing.Point(180, 109);
+            this.TxtApellido.Location = new System.Drawing.Point(179, 109);
             this.TxtApellido.Multiline = true;
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(560, 24);
+            this.TxtApellido.Size = new System.Drawing.Size(559, 24);
             this.TxtApellido.TabIndex = 2;
             // 
             // LblApellido
@@ -496,10 +482,10 @@
             // TxtUsuario
             // 
             this.TxtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtUsuario.Location = new System.Drawing.Point(180, 211);
+            this.TxtUsuario.Location = new System.Drawing.Point(179, 211);
             this.TxtUsuario.Multiline = true;
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(560, 33);
+            this.TxtUsuario.Size = new System.Drawing.Size(559, 33);
             this.TxtUsuario.TabIndex = 4;
             // 
             // LblRut
@@ -518,11 +504,11 @@
             // TxtRut
             // 
             this.TxtRut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtRut.Location = new System.Drawing.Point(180, 154);
+            this.TxtRut.Location = new System.Drawing.Point(179, 154);
             this.TxtRut.MaxLength = 12;
             this.TxtRut.Multiline = true;
             this.TxtRut.Name = "TxtRut";
-            this.TxtRut.Size = new System.Drawing.Size(560, 33);
+            this.TxtRut.Size = new System.Drawing.Size(559, 33);
             this.TxtRut.TabIndex = 3;
             this.TxtRut.Leave += new System.EventHandler(this.TxtRut_Leave);
             this.TxtRut.MouseLeave += new System.EventHandler(this.TxtRut_MouseLeave);
@@ -532,13 +518,39 @@
             this.BtnCerrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BtnCerrar.ForeColor = System.Drawing.Color.White;
-            this.BtnCerrar.Location = new System.Drawing.Point(782, 639);
+            this.BtnCerrar.Location = new System.Drawing.Point(780, 639);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(175, 39);
             this.BtnCerrar.TabIndex = 10;
             this.BtnCerrar.Text = "CERRAR";
             this.BtnCerrar.UseVisualStyleBackColor = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click_1);
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BtnGuardar.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardar.Location = new System.Drawing.Point(363, 556);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(191, 39);
+            this.BtnGuardar.TabIndex = 12;
+            this.BtnGuardar.Text = "GUARDAR";
+            this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click_1);
+            // 
+            // BtnGuardarCambios
+            // 
+            this.BtnGuardarCambios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnGuardarCambios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BtnGuardarCambios.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarCambios.Location = new System.Drawing.Point(369, 639);
+            this.BtnGuardarCambios.Name = "BtnGuardarCambios";
+            this.BtnGuardarCambios.Size = new System.Drawing.Size(178, 38);
+            this.BtnGuardarCambios.TabIndex = 11;
+            this.BtnGuardarCambios.Text = "GUARDAR CAMBIOS";
+            this.BtnGuardarCambios.UseVisualStyleBackColor = false;
+            this.BtnGuardarCambios.Click += new System.EventHandler(this.BtnGuardarCambios_Click_1);
             // 
             // DtEliminados
             // 
@@ -551,18 +563,6 @@
             this.DtEliminados.RowTemplate.Height = 24;
             this.DtEliminados.Size = new System.Drawing.Size(1200, 707);
             this.DtEliminados.TabIndex = 5;
-            // 
-            // BtnVolver
-            // 
-            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnVolver.BackColor = System.Drawing.Color.SeaGreen;
-            this.BtnVolver.ForeColor = System.Drawing.Color.White;
-            this.BtnVolver.Location = new System.Drawing.Point(803, 14);
-            this.BtnVolver.Name = "BtnVolver";
-            this.BtnVolver.Size = new System.Drawing.Size(136, 26);
-            this.BtnVolver.TabIndex = 16;
-            this.BtnVolver.Text = "VOLVER";
-            this.BtnVolver.UseVisualStyleBackColor = false;
             // 
             // Empleados
             // 

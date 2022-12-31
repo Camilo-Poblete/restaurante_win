@@ -16,5 +16,10 @@ namespace Diseño.Garzones_r
         {
             InitializeComponent();
         }
+
+        private void Ingresar_Pedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -543,7 +543,7 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.Sienna;
+            this.panelContenedor.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(299, 44);
             this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

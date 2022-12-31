@@ -193,6 +193,9 @@
   <data name="add user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reloading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reloading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -231,5 +234,8 @@
   </data>
   <data name="search6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reloading1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reloading1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

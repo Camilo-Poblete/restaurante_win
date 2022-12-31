@@ -71,5 +71,5 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Bodega_
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Ajuste_usuario.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Reportes.Reporte_ventas.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csprojAssemblyReference.cache
-C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Registro_Cliente.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Empleados.resources
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Registro_Clientes.resources

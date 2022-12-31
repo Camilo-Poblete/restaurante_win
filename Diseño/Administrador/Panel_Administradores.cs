@@ -158,7 +158,7 @@ namespace Diseño
 
         private void BtnCliente_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new Registro_Cliente());
+            AbrirFormEnPanel(new Registro_Clientes());
         }
 
         private void BTNventas_Click(object sender, EventArgs e)
