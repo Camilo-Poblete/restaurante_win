@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.PnlFormulario = new System.Windows.Forms.Panel();
+            this.DtStock = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.PicImagen = new System.Windows.Forms.PictureBox();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnAgregarCategoria = new System.Windows.Forms.Button();
+            this.BtnCategoria = new System.Windows.Forms.Button();
+            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.BtnImagen = new System.Windows.Forms.Button();
             this.LytFormulario = new System.Windows.Forms.TableLayoutPanel();
             this.LblCategoria = new System.Windows.Forms.Label();
             this.CbxCategoria = new System.Windows.Forms.ComboBox();
@@ -47,22 +56,13 @@
             this.TxtStockCritico = new System.Windows.Forms.TextBox();
             this.DtpFecha = new System.Windows.Forms.DateTimePicker();
             this.LblStockCritico = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnImagen = new System.Windows.Forms.Button();
-            this.PicImagen = new System.Windows.Forms.PictureBox();
             this.BtnVolver = new System.Windows.Forms.Button();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnAgregarCategoria = new System.Windows.Forms.Button();
-            this.BtnCategoria = new System.Windows.Forms.Button();
-            this.BtnAgregar = new System.Windows.Forms.Button();
-            this.DtStock = new System.Windows.Forms.DataGridView();
             this.PnlFormulario.SuspendLayout();
-            this.LytFormulario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtStock)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicImagen)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtStock)).BeginInit();
+            this.LytFormulario.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -80,6 +80,163 @@
             this.PnlFormulario.Name = "PnlFormulario";
             this.PnlFormulario.Size = new System.Drawing.Size(1118, 727);
             this.PnlFormulario.TabIndex = 1;
+            // 
+            // DtStock
+            // 
+            this.DtStock.AllowUserToAddRows = false;
+            this.DtStock.AllowUserToDeleteRows = false;
+            this.DtStock.AllowUserToResizeRows = false;
+            this.DtStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DtStock.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DtStock.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.DtStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DtStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtStock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DtStock.EnableHeadersVisualStyles = false;
+            this.DtStock.GridColor = System.Drawing.Color.SteelBlue;
+            this.DtStock.Location = new System.Drawing.Point(0, 568);
+            this.DtStock.Name = "DtStock";
+            this.DtStock.RowHeadersVisible = false;
+            this.DtStock.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DtStock.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.DtStock.RowTemplate.Height = 24;
+            this.DtStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DtStock.Size = new System.Drawing.Size(1118, 159);
+            this.DtStock.TabIndex = 5;
+            this.DtStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtStock_CellContentClick);
+            this.DtStock.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtStock_CellDoubleClick_1);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.64179F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.86567F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.568627F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 227F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 347F));
+            this.tableLayoutPanel2.Controls.Add(this.PicImagen, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.BtnModificar, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.BtnImagen, 4, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 178);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1118, 390);
+            this.tableLayoutPanel2.TabIndex = 4;
+            // 
+            // PicImagen
+            // 
+            this.PicImagen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.PicImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            this.PicImagen.Location = new System.Drawing.Point(772, 3);
+            this.PicImagen.Name = "PicImagen";
+            this.PicImagen.Size = new System.Drawing.Size(341, 384);
+            this.PicImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicImagen.TabIndex = 0;
+            this.PicImagen.TabStop = false;
+            this.PicImagen.SizeModeChanged += new System.EventHandler(this.StretchImage);
+            // 
+            // BtnModificar
+            // 
+            this.BtnModificar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            this.BtnModificar.ForeColor = System.Drawing.Color.White;
+            this.BtnModificar.Location = new System.Drawing.Point(386, 3);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(137, 39);
+            this.BtnModificar.TabIndex = 11;
+            this.BtnModificar.Text = "MODIFICAR";
+            this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.68876F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.31124F));
+            this.tableLayoutPanel1.Controls.Add(this.BtnAgregarCategoria, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.BtnCategoria, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.BtnAgregar, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.15385F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.84615F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(377, 384);
+            this.tableLayoutPanel1.TabIndex = 8;
+            // 
+            // BtnAgregarCategoria
+            // 
+            this.BtnAgregarCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnAgregarCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            this.BtnAgregarCategoria.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregarCategoria.Location = new System.Drawing.Point(47, 141);
+            this.BtnAgregarCategoria.Name = "BtnAgregarCategoria";
+            this.BtnAgregarCategoria.Size = new System.Drawing.Size(190, 41);
+            this.BtnAgregarCategoria.TabIndex = 10;
+            this.BtnAgregarCategoria.Text = "AGREGAR STOCK";
+            this.BtnAgregarCategoria.UseVisualStyleBackColor = false;
+            this.BtnAgregarCategoria.Click += new System.EventHandler(this.BtnAgregarCategoria_Click);
+            // 
+            // BtnCategoria
+            // 
+            this.BtnCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            this.BtnCategoria.ForeColor = System.Drawing.Color.White;
+            this.BtnCategoria.Location = new System.Drawing.Point(54, 3);
+            this.BtnCategoria.Name = "BtnCategoria";
+            this.BtnCategoria.Size = new System.Drawing.Size(183, 39);
+            this.BtnCategoria.TabIndex = 9;
+            this.BtnCategoria.Text = "AGREGAR CATEGORIA";
+            this.BtnCategoria.UseVisualStyleBackColor = false;
+            this.BtnCategoria.Click += new System.EventHandler(this.BtnCategoria_Click_1);
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.Location = new System.Drawing.Point(243, 3);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(131, 39);
+            this.BtnAgregar.TabIndex = 8;
+            this.BtnAgregar.Text = "AGREGAR";
+            this.BtnAgregar.UseVisualStyleBackColor = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // BtnImagen
+            // 
+            this.BtnImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            this.BtnImagen.ForeColor = System.Drawing.Color.White;
+            this.BtnImagen.Location = new System.Drawing.Point(549, 3);
+            this.BtnImagen.Name = "BtnImagen";
+            this.BtnImagen.Size = new System.Drawing.Size(217, 52);
+            this.BtnImagen.TabIndex = 7;
+            this.BtnImagen.Text = "SELECCIONAR IMAGEN";
+            this.BtnImagen.UseVisualStyleBackColor = false;
+            this.BtnImagen.Click += new System.EventHandler(this.BtnImagen_Click);
             // 
             // LytFormulario
             // 
@@ -134,7 +291,7 @@
             this.CbxCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.CbxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxCategoria.FormattingEnabled = true;
-            this.CbxCategoria.Location = new System.Drawing.Point(156, 129);
+            this.CbxCategoria.Location = new System.Drawing.Point(156, 128);
             this.CbxCategoria.Name = "CbxCategoria";
             this.CbxCategoria.Size = new System.Drawing.Size(285, 24);
             this.CbxCategoria.TabIndex = 3;
@@ -261,54 +418,6 @@
             this.LblStockCritico.TabIndex = 7;
             this.LblStockCritico.Text = "STOCK CRITICO:";
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.tableLayoutPanel2.ColumnCount = 6;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.64179F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.86567F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.568627F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 227F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 346F));
-            this.tableLayoutPanel2.Controls.Add(this.PicImagen, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.BtnModificar, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.BtnImagen, 4, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 178);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1118, 390);
-            this.tableLayoutPanel2.TabIndex = 4;
-            // 
-            // BtnImagen
-            // 
-            this.BtnImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            this.BtnImagen.ForeColor = System.Drawing.Color.White;
-            this.BtnImagen.Location = new System.Drawing.Point(551, 3);
-            this.BtnImagen.Name = "BtnImagen";
-            this.BtnImagen.Size = new System.Drawing.Size(217, 52);
-            this.BtnImagen.TabIndex = 7;
-            this.BtnImagen.Text = "SELECCIONAR IMAGEN";
-            this.BtnImagen.UseVisualStyleBackColor = false;
-            this.BtnImagen.Click += new System.EventHandler(this.BtnImagen_Click);
-            // 
-            // PicImagen
-            // 
-            this.PicImagen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.PicImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            this.PicImagen.Location = new System.Drawing.Point(774, 3);
-            this.PicImagen.Name = "PicImagen";
-            this.PicImagen.Size = new System.Drawing.Size(341, 384);
-            this.PicImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicImagen.TabIndex = 0;
-            this.PicImagen.TabStop = false;
-            this.PicImagen.SizeModeChanged += new System.EventHandler(this.StretchImage);
-            // 
             // BtnVolver
             // 
             this.BtnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
@@ -321,115 +430,6 @@
             this.BtnVolver.UseVisualStyleBackColor = false;
             this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
-            // BtnModificar
-            // 
-            this.BtnModificar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            this.BtnModificar.ForeColor = System.Drawing.Color.White;
-            this.BtnModificar.Location = new System.Drawing.Point(387, 3);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(138, 39);
-            this.BtnModificar.TabIndex = 11;
-            this.BtnModificar.Text = "MODIFICAR";
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.68876F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.31124F));
-            this.tableLayoutPanel1.Controls.Add(this.BtnAgregarCategoria, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.BtnCategoria, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BtnAgregar, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.15385F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.84615F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 384);
-            this.tableLayoutPanel1.TabIndex = 8;
-            // 
-            // BtnAgregarCategoria
-            // 
-            this.BtnAgregarCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnAgregarCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            this.BtnAgregarCategoria.ForeColor = System.Drawing.Color.White;
-            this.BtnAgregarCategoria.Location = new System.Drawing.Point(47, 141);
-            this.BtnAgregarCategoria.Name = "BtnAgregarCategoria";
-            this.BtnAgregarCategoria.Size = new System.Drawing.Size(190, 41);
-            this.BtnAgregarCategoria.TabIndex = 10;
-            this.BtnAgregarCategoria.Text = "AGREGAR STOCK";
-            this.BtnAgregarCategoria.UseVisualStyleBackColor = false;
-            this.BtnAgregarCategoria.Click += new System.EventHandler(this.BtnAgregarCategoria_Click);
-            // 
-            // BtnCategoria
-            // 
-            this.BtnCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            this.BtnCategoria.ForeColor = System.Drawing.Color.White;
-            this.BtnCategoria.Location = new System.Drawing.Point(54, 3);
-            this.BtnCategoria.Name = "BtnCategoria";
-            this.BtnCategoria.Size = new System.Drawing.Size(183, 39);
-            this.BtnCategoria.TabIndex = 9;
-            this.BtnCategoria.Text = "AGREGAR CATEGORIA";
-            this.BtnCategoria.UseVisualStyleBackColor = false;
-            this.BtnCategoria.Click += new System.EventHandler(this.BtnCategoria_Click_1);
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
-            this.BtnAgregar.Location = new System.Drawing.Point(243, 3);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(132, 39);
-            this.BtnAgregar.TabIndex = 8;
-            this.BtnAgregar.Text = "AGREGAR";
-            this.BtnAgregar.UseVisualStyleBackColor = false;
-            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
-            // DtStock
-            // 
-            this.DtStock.AllowUserToAddRows = false;
-            this.DtStock.AllowUserToDeleteRows = false;
-            this.DtStock.AllowUserToResizeRows = false;
-            this.DtStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DtStock.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DtStock.BackgroundColor = System.Drawing.Color.DarkSlateGray;
-            this.DtStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.DtStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DtStock.EnableHeadersVisualStyles = false;
-            this.DtStock.GridColor = System.Drawing.Color.SteelBlue;
-            this.DtStock.Location = new System.Drawing.Point(0, 568);
-            this.DtStock.Name = "DtStock";
-            this.DtStock.RowHeadersVisible = false;
-            this.DtStock.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DtStock.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DtStock.RowTemplate.Height = 24;
-            this.DtStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DtStock.Size = new System.Drawing.Size(1118, 159);
-            this.DtStock.TabIndex = 5;
-            this.DtStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtStock_CellContentClick);
-            this.DtStock.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtStock_CellDoubleClick_1);
-            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -441,12 +441,12 @@
             this.Text = "Stock";
             this.Load += new System.EventHandler(this.Stock_Load);
             this.PnlFormulario.ResumeLayout(false);
-            this.LytFormulario.ResumeLayout(false);
-            this.LytFormulario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtStock)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicImagen)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DtStock)).EndInit();
+            this.LytFormulario.ResumeLayout(false);
+            this.LytFormulario.PerformLayout();
             this.ResumeLayout(false);
 
         }

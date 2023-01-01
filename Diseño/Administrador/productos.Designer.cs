@@ -49,20 +49,20 @@
             this.LblDescPlato = new System.Windows.Forms.Label();
             this.Lbltitulo = new System.Windows.Forms.Label();
             this.BtnVolver = new System.Windows.Forms.Button();
+            this.PicFotoPlato = new System.Windows.Forms.PictureBox();
             this.BtnImagen = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.LblFiltroTexto = new System.Windows.Forms.Label();
+            this.BtnRecargarGrilla = new System.Windows.Forms.PictureBox();
             this.CbxFiltro = new System.Windows.Forms.ComboBox();
             this.LblFiltro = new System.Windows.Forms.Label();
             this.DtPreparaciones = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.BtnRecargarGrilla = new System.Windows.Forms.PictureBox();
-            this.PicFotoPlato = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtPreparaciones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnRecargarGrilla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFotoPlato)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnRecargarGrilla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtPreparaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -281,7 +281,7 @@
             this.CbxTipoPlato.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.CbxTipoPlato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxTipoPlato.FormattingEnabled = true;
-            this.CbxTipoPlato.Location = new System.Drawing.Point(289, 134);
+            this.CbxTipoPlato.Location = new System.Drawing.Point(289, 133);
             this.CbxTipoPlato.Name = "CbxTipoPlato";
             this.CbxTipoPlato.Size = new System.Drawing.Size(336, 24);
             this.CbxTipoPlato.TabIndex = 3;
@@ -343,6 +343,18 @@
             this.BtnVolver.UseVisualStyleBackColor = false;
             this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
+            // PicFotoPlato
+            // 
+            this.PicFotoPlato.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.PicFotoPlato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            this.PicFotoPlato.Location = new System.Drawing.Point(289, 281);
+            this.PicFotoPlato.Name = "PicFotoPlato";
+            this.PicFotoPlato.Size = new System.Drawing.Size(434, 223);
+            this.PicFotoPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicFotoPlato.TabIndex = 8;
+            this.PicFotoPlato.TabStop = false;
+            // 
             // BtnImagen
             // 
             this.BtnImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -393,6 +405,18 @@
             this.LblFiltroTexto.TabIndex = 11;
             this.LblFiltroTexto.Text = "LISTADO DE PREPARACIONES";
             this.LblFiltroTexto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BtnRecargarGrilla
+            // 
+            this.BtnRecargarGrilla.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRecargarGrilla.Image = global::Diseño.Properties.Resources.reloading1;
+            this.BtnRecargarGrilla.Location = new System.Drawing.Point(363, 3);
+            this.BtnRecargarGrilla.Name = "BtnRecargarGrilla";
+            this.BtnRecargarGrilla.Size = new System.Drawing.Size(36, 35);
+            this.BtnRecargarGrilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnRecargarGrilla.TabIndex = 15;
+            this.BtnRecargarGrilla.TabStop = false;
+            this.BtnRecargarGrilla.Click += new System.EventHandler(this.BtnRecargarGrilla_Click_1);
             // 
             // CbxFiltro
             // 
@@ -462,30 +486,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // BtnRecargarGrilla
-            // 
-            this.BtnRecargarGrilla.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnRecargarGrilla.Image = global::Diseño.Properties.Resources.reloading1;
-            this.BtnRecargarGrilla.Location = new System.Drawing.Point(363, 3);
-            this.BtnRecargarGrilla.Name = "BtnRecargarGrilla";
-            this.BtnRecargarGrilla.Size = new System.Drawing.Size(36, 35);
-            this.BtnRecargarGrilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnRecargarGrilla.TabIndex = 15;
-            this.BtnRecargarGrilla.TabStop = false;
-            this.BtnRecargarGrilla.Click += new System.EventHandler(this.BtnRecargarGrilla_Click_1);
-            // 
-            // PicFotoPlato
-            // 
-            this.PicFotoPlato.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.PicFotoPlato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            this.PicFotoPlato.Location = new System.Drawing.Point(289, 281);
-            this.PicFotoPlato.Name = "PicFotoPlato";
-            this.PicFotoPlato.Size = new System.Drawing.Size(434, 223);
-            this.PicFotoPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicFotoPlato.TabIndex = 8;
-            this.PicFotoPlato.TabStop = false;
-            // 
             // productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -501,11 +501,11 @@
             this.Load += new System.EventHandler(this.productos_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicFotoPlato)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtPreparaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnRecargarGrilla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicFotoPlato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtPreparaciones)).EndInit();
             this.ResumeLayout(false);
 
         }
