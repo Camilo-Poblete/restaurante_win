@@ -30,18 +30,25 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.PnlPrincipal = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlProveedores = new System.Windows.Forms.Panel();
+            this.PnlProveedor = new System.Windows.Forms.TableLayoutPanel();
+            this.DtProveedor = new System.Windows.Forms.DataGridView();
+            this.DtProveedores = new System.Windows.Forms.DataGridView();
+            this.LblListaProveedores = new System.Windows.Forms.Label();
+            this.TxtFiltroProveedorDT = new System.Windows.Forms.TextBox();
             this.PnlComentarios = new System.Windows.Forms.TableLayoutPanel();
             this.LblDescripcionProveedor = new System.Windows.Forms.Label();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.LblProveedores = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnIngresarProveedor = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.BtnStockProveedor = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
             this.PnlFormulario = new System.Windows.Forms.TableLayoutPanel();
             this.TxtIDproveedor = new System.Windows.Forms.TextBox();
             this.LblPrecio = new System.Windows.Forms.Label();
@@ -61,17 +68,21 @@
             this.TxtDireccion = new System.Windows.Forms.TextBox();
             this.TxtRut = new System.Windows.Forms.TextBox();
             this.TxtRazonSocial = new System.Windows.Forms.TextBox();
-            this.PnlProveedor = new System.Windows.Forms.TableLayoutPanel();
-            this.LblListaProveedores = new System.Windows.Forms.Label();
-            this.TxtFiltroProveedorDT = new System.Windows.Forms.TextBox();
             this.PnlStock = new System.Windows.Forms.TableLayoutPanel();
             this.LblTituloListaStock = new System.Windows.Forms.Label();
             this.DtStock = new System.Windows.Forms.DataGridView();
             this.TxtFiltroStock = new System.Windows.Forms.TextBox();
+            this.PnlPrincipal = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtIDStock = new System.Windows.Forms.TextBox();
+            this.LblCompraStock = new System.Windows.Forms.Label();
+            this.TxtIdCompra = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.PnlFormularioPedido = new System.Windows.Forms.TableLayoutPanel();
             this.LblComentarios = new System.Windows.Forms.Label();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.TxtComentarios = new System.Windows.Forms.TextBox();
+            this.BtnCancelarCompra = new System.Windows.Forms.Button();
             this.LblProveedor = new System.Windows.Forms.Label();
             this.LblCantidad = new System.Windows.Forms.Label();
             this.LblNombreProducto = new System.Windows.Forms.Label();
@@ -80,44 +91,28 @@
             this.TxtProveedor = new System.Windows.Forms.TextBox();
             this.PnlBotonesIngresoCompra = new System.Windows.Forms.TableLayoutPanel();
             this.BtnEmitirOrden = new System.Windows.Forms.Button();
-            this.BtnIngresarProducto = new System.Windows.Forms.Button();
             this.BtnIngresarCompra = new System.Windows.Forms.Button();
-            this.BtnCancelarCompra = new System.Windows.Forms.Button();
+            this.BtnIngresarProducto = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.CbxStockCompra = new System.Windows.Forms.ComboBox();
             this.TxtNombreStock = new System.Windows.Forms.TextBox();
-            this.DtProveedores = new System.Windows.Forms.DataGridView();
-            this.DtProveedor = new System.Windows.Forms.DataGridView();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnStockProveedor = new System.Windows.Forms.Button();
-            this.PnlPrincipal.SuspendLayout();
             this.PnlProveedores.SuspendLayout();
+            this.PnlProveedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtProveedores)).BeginInit();
             this.PnlComentarios.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.PnlFormulario.SuspendLayout();
-            this.PnlProveedor.SuspendLayout();
             this.PnlStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtStock)).BeginInit();
+            this.PnlPrincipal.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.PnlFormularioPedido.SuspendLayout();
             this.PnlNombreProveedor.SuspendLayout();
             this.PnlBotonesIngresoCompra.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtProveedores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtProveedor)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PnlPrincipal
-            // 
-            this.PnlPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.PnlPrincipal.Controls.Add(this.PnlFormularioPedido);
-            this.PnlPrincipal.Controls.Add(this.PnlStock);
-            this.PnlPrincipal.Controls.Add(this.PnlProveedores);
-            this.PnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.PnlPrincipal.Name = "PnlPrincipal";
-            this.PnlPrincipal.Size = new System.Drawing.Size(1612, 754);
-            this.PnlPrincipal.TabIndex = 1;
             // 
             // PnlProveedores
             // 
@@ -129,6 +124,122 @@
             this.PnlProveedores.Name = "PnlProveedores";
             this.PnlProveedores.Size = new System.Drawing.Size(1612, 352);
             this.PnlProveedores.TabIndex = 1;
+            // 
+            // PnlProveedor
+            // 
+            this.PnlProveedor.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.PnlProveedor.ColumnCount = 3;
+            this.PnlProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.52207F));
+            this.PnlProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.34703F));
+            this.PnlProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.283105F));
+            this.PnlProveedor.Controls.Add(this.DtProveedor, 0, 2);
+            this.PnlProveedor.Controls.Add(this.DtProveedores, 0, 2);
+            this.PnlProveedor.Controls.Add(this.LblListaProveedores, 1, 0);
+            this.PnlProveedor.Controls.Add(this.TxtFiltroProveedorDT, 1, 1);
+            this.PnlProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlProveedor.Location = new System.Drawing.Point(1097, 0);
+            this.PnlProveedor.Name = "PnlProveedor";
+            this.PnlProveedor.RowCount = 3;
+            this.PnlProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.12903F));
+            this.PnlProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.22727F));
+            this.PnlProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.86364F));
+            this.PnlProveedor.Size = new System.Drawing.Size(515, 352);
+            this.PnlProveedor.TabIndex = 3;
+            // 
+            // DtProveedor
+            // 
+            this.DtProveedor.AllowUserToAddRows = false;
+            this.DtProveedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DtProveedor.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DtProveedor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
+            this.DtProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DtProveedor.DefaultCellStyle = dataGridViewCellStyle1;
+            this.DtProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DtProveedor.EnableHeadersVisualStyles = false;
+            this.DtProveedor.Location = new System.Drawing.Point(3, 94);
+            this.DtProveedor.MultiSelect = false;
+            this.DtProveedor.Name = "DtProveedor";
+            this.DtProveedor.ReadOnly = true;
+            this.DtProveedor.RowHeadersVisible = false;
+            this.DtProveedor.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DtProveedor.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.DtProveedor.RowTemplate.Height = 24;
+            this.DtProveedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DtProveedor.Size = new System.Drawing.Size(1, 255);
+            this.DtProveedor.TabIndex = 4;
+            // 
+            // DtProveedores
+            // 
+            this.DtProveedores.AllowUserToAddRows = false;
+            this.DtProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DtProveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DtProveedores.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.DtProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DtProveedores.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DtProveedores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DtProveedores.EnableHeadersVisualStyles = false;
+            this.DtProveedores.Location = new System.Drawing.Point(10, 94);
+            this.DtProveedores.MultiSelect = false;
+            this.DtProveedores.Name = "DtProveedores";
+            this.DtProveedores.ReadOnly = true;
+            this.DtProveedores.RowHeadersVisible = false;
+            this.DtProveedores.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.DtProveedores.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DtProveedores.RowTemplate.Height = 24;
+            this.DtProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DtProveedores.Size = new System.Drawing.Size(489, 255);
+            this.DtProveedores.TabIndex = 3;
+            this.DtProveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtProveedores_CellClick);
+            // 
+            // LblListaProveedores
+            // 
+            this.LblListaProveedores.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblListaProveedores.AutoSize = true;
+            this.LblListaProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblListaProveedores.ForeColor = System.Drawing.Color.White;
+            this.LblListaProveedores.Location = new System.Drawing.Point(166, 16);
+            this.LblListaProveedores.Name = "LblListaProveedores";
+            this.LblListaProveedores.Size = new System.Drawing.Size(177, 24);
+            this.LblListaProveedores.TabIndex = 1;
+            this.LblListaProveedores.Text = "Lista Proveedores";
+            this.LblListaProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtFiltroProveedorDT
+            // 
+            this.TxtFiltroProveedorDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtFiltroProveedorDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFiltroProveedorDT.ForeColor = System.Drawing.Color.Gray;
+            this.TxtFiltroProveedorDT.Location = new System.Drawing.Point(10, 61);
+            this.TxtFiltroProveedorDT.Multiline = true;
+            this.TxtFiltroProveedorDT.Name = "TxtFiltroProveedorDT";
+            this.TxtFiltroProveedorDT.Size = new System.Drawing.Size(489, 25);
+            this.TxtFiltroProveedorDT.TabIndex = 2;
+            this.TxtFiltroProveedorDT.Text = "Ingrese nombre un nombre de producto para filtrar.";
+            this.TxtFiltroProveedorDT.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TxtFiltroProveedorDT_MouseClick);
+            this.TxtFiltroProveedorDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtFiltroProveedorDT_KeyPress);
+            this.TxtFiltroProveedorDT.Leave += new System.EventHandler(this.TxtFiltroProveedorDT_Leave);
             // 
             // PnlComentarios
             // 
@@ -221,6 +332,44 @@
             this.BtnIngresarProveedor.Text = "INGRESAR PROVEEDOR";
             this.BtnIngresarProveedor.UseVisualStyleBackColor = false;
             this.BtnIngresarProveedor.Click += new System.EventHandler(this.BtnIngresarProveedor_Click);
+            // 
+            // BtnModificar
+            // 
+            this.BtnModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BtnModificar.ForeColor = System.Drawing.Color.White;
+            this.BtnModificar.Location = new System.Drawing.Point(258, 3);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(211, 29);
+            this.BtnModificar.TabIndex = 12;
+            this.BtnModificar.Text = "MODIFICAR";
+            this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
+            // 
+            // BtnStockProveedor
+            // 
+            this.BtnStockProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnStockProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BtnStockProveedor.ForeColor = System.Drawing.Color.White;
+            this.BtnStockProveedor.Location = new System.Drawing.Point(22, 73);
+            this.BtnStockProveedor.Name = "BtnStockProveedor";
+            this.BtnStockProveedor.Size = new System.Drawing.Size(211, 31);
+            this.BtnStockProveedor.TabIndex = 14;
+            this.BtnStockProveedor.Text = "ENLAZAR PROVEEDOR";
+            this.BtnStockProveedor.UseVisualStyleBackColor = false;
+            this.BtnStockProveedor.Click += new System.EventHandler(this.BtnStockProveedor_Click);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BtnCancelar.ForeColor = System.Drawing.Color.White;
+            this.BtnCancelar.Location = new System.Drawing.Point(258, 73);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(211, 31);
+            this.BtnCancelar.TabIndex = 13;
+            this.BtnCancelar.Text = "CANCELAR";
+            this.BtnCancelar.UseVisualStyleBackColor = false;
             // 
             // PnlFormulario
             // 
@@ -335,6 +484,7 @@
             this.CbxProducto.Name = "CbxProducto";
             this.CbxProducto.Size = new System.Drawing.Size(307, 24);
             this.CbxProducto.TabIndex = 8;
+            this.CbxProducto.SelectedIndexChanged += new System.EventHandler(this.CbxProducto_SelectedIndexChanged);
             // 
             // LblDireccion
             // 
@@ -419,6 +569,7 @@
             this.TxtProducto.Name = "TxtProducto";
             this.TxtProducto.Size = new System.Drawing.Size(307, 29);
             this.TxtProducto.TabIndex = 7;
+            this.TxtProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtProducto_KeyPress);
             // 
             // TxtEmail
             // 
@@ -465,59 +616,13 @@
             this.TxtRazonSocial.Size = new System.Drawing.Size(307, 26);
             this.TxtRazonSocial.TabIndex = 2;
             // 
-            // PnlProveedor
-            // 
-            this.PnlProveedor.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.PnlProveedor.ColumnCount = 3;
-            this.PnlProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.52207F));
-            this.PnlProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.34703F));
-            this.PnlProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.283105F));
-            this.PnlProveedor.Controls.Add(this.DtProveedor, 0, 2);
-            this.PnlProveedor.Controls.Add(this.DtProveedores, 0, 2);
-            this.PnlProveedor.Controls.Add(this.LblListaProveedores, 1, 0);
-            this.PnlProveedor.Controls.Add(this.TxtFiltroProveedorDT, 1, 1);
-            this.PnlProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlProveedor.Location = new System.Drawing.Point(1097, 0);
-            this.PnlProveedor.Name = "PnlProveedor";
-            this.PnlProveedor.RowCount = 3;
-            this.PnlProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.12903F));
-            this.PnlProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.22727F));
-            this.PnlProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.86364F));
-            this.PnlProveedor.Size = new System.Drawing.Size(515, 352);
-            this.PnlProveedor.TabIndex = 3;
-            // 
-            // LblListaProveedores
-            // 
-            this.LblListaProveedores.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblListaProveedores.AutoSize = true;
-            this.LblListaProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblListaProveedores.ForeColor = System.Drawing.Color.White;
-            this.LblListaProveedores.Location = new System.Drawing.Point(166, 16);
-            this.LblListaProveedores.Name = "LblListaProveedores";
-            this.LblListaProveedores.Size = new System.Drawing.Size(177, 24);
-            this.LblListaProveedores.TabIndex = 1;
-            this.LblListaProveedores.Text = "Lista Proveedores";
-            this.LblListaProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtFiltroProveedorDT
-            // 
-            this.TxtFiltroProveedorDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtFiltroProveedorDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFiltroProveedorDT.ForeColor = System.Drawing.Color.Gray;
-            this.TxtFiltroProveedorDT.Location = new System.Drawing.Point(10, 61);
-            this.TxtFiltroProveedorDT.Multiline = true;
-            this.TxtFiltroProveedorDT.Name = "TxtFiltroProveedorDT";
-            this.TxtFiltroProveedorDT.Size = new System.Drawing.Size(489, 25);
-            this.TxtFiltroProveedorDT.TabIndex = 2;
-            this.TxtFiltroProveedorDT.Text = "Ingrese nombre un nombre de producto para filtrar.";
-            // 
             // PnlStock
             // 
             this.PnlStock.BackColor = System.Drawing.Color.DarkSlateGray;
             this.PnlStock.ColumnCount = 3;
             this.PnlStock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.408451F));
-            this.PnlStock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.67094F));
-            this.PnlStock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.920615F));
+            this.PnlStock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.71848F));
+            this.PnlStock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.899827F));
             this.PnlStock.Controls.Add(this.LblTituloListaStock, 1, 0);
             this.PnlStock.Controls.Add(this.DtStock, 1, 2);
             this.PnlStock.Controls.Add(this.TxtFiltroStock, 1, 1);
@@ -529,7 +634,7 @@
             this.PnlStock.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.258928F));
             this.PnlStock.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.23214F));
             this.PnlStock.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.803571F));
-            this.PnlStock.Size = new System.Drawing.Size(714, 402);
+            this.PnlStock.Size = new System.Drawing.Size(580, 402);
             this.PnlStock.TabIndex = 2;
             // 
             // LblTituloListaStock
@@ -538,7 +643,7 @@
             this.LblTituloListaStock.AutoSize = true;
             this.LblTituloListaStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTituloListaStock.ForeColor = System.Drawing.Color.White;
-            this.LblTituloListaStock.Location = new System.Drawing.Point(300, 5);
+            this.LblTituloListaStock.Location = new System.Drawing.Point(233, 5);
             this.LblTituloListaStock.Name = "LblTituloListaStock";
             this.LblTituloListaStock.Size = new System.Drawing.Size(109, 24);
             this.LblTituloListaStock.TabIndex = 1;
@@ -551,31 +656,31 @@
             this.DtStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DtStock.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DtStock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DtStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtStock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DtStock.EnableHeadersVisualStyles = false;
-            this.DtStock.Location = new System.Drawing.Point(13, 70);
+            this.DtStock.Location = new System.Drawing.Point(11, 70);
             this.DtStock.MultiSelect = false;
             this.DtStock.Name = "DtStock";
             this.DtStock.ReadOnly = true;
             this.DtStock.RowHeadersVisible = false;
             this.DtStock.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.DtStock.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.DtStock.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DtStock.RowTemplate.Height = 24;
             this.DtStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DtStock.Size = new System.Drawing.Size(684, 305);
+            this.DtStock.Size = new System.Drawing.Size(554, 305);
             this.DtStock.TabIndex = 0;
             // 
             // TxtFiltroStock
@@ -583,22 +688,108 @@
             this.TxtFiltroStock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtFiltroStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFiltroStock.ForeColor = System.Drawing.Color.Gray;
-            this.TxtFiltroStock.Location = new System.Drawing.Point(13, 38);
+            this.TxtFiltroStock.Location = new System.Drawing.Point(11, 38);
             this.TxtFiltroStock.Multiline = true;
             this.TxtFiltroStock.Name = "TxtFiltroStock";
-            this.TxtFiltroStock.Size = new System.Drawing.Size(684, 25);
+            this.TxtFiltroStock.Size = new System.Drawing.Size(554, 25);
             this.TxtFiltroStock.TabIndex = 15;
             this.TxtFiltroStock.Text = "Ingrese nombre un nombre de producto para filtrar.";
+            this.TxtFiltroStock.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TxtFiltroStock_MouseClick);
+            this.TxtFiltroStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtFiltroStock_KeyPress);
+            this.TxtFiltroStock.Leave += new System.EventHandler(this.TxtFiltroStock_Leave);
+            // 
+            // PnlPrincipal
+            // 
+            this.PnlPrincipal.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.PnlPrincipal.Controls.Add(this.tableLayoutPanel4);
+            this.PnlPrincipal.Controls.Add(this.tableLayoutPanel1);
+            this.PnlPrincipal.Controls.Add(this.PnlStock);
+            this.PnlPrincipal.Controls.Add(this.PnlProveedores);
+            this.PnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.PnlPrincipal.Name = "PnlPrincipal";
+            this.PnlPrincipal.Size = new System.Drawing.Size(1612, 754);
+            this.PnlPrincipal.TabIndex = 1;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.89222F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.10778F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 345F));
+            this.tableLayoutPanel4.Controls.Add(this.TxtIDStock, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.LblCompraStock, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.TxtIdCompra, 2, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(601, 352);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1008, 29);
+            this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // TxtIDStock
+            // 
+            this.TxtIDStock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtIDStock.Enabled = false;
+            this.TxtIDStock.Location = new System.Drawing.Point(3, 4);
+            this.TxtIDStock.Multiline = true;
+            this.TxtIDStock.Name = "TxtIDStock";
+            this.TxtIDStock.ReadOnly = true;
+            this.TxtIDStock.Size = new System.Drawing.Size(351, 21);
+            this.TxtIDStock.TabIndex = 3;
+            this.TxtIDStock.Visible = false;
+            // 
+            // LblCompraStock
+            // 
+            this.LblCompraStock.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblCompraStock.AutoSize = true;
+            this.LblCompraStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCompraStock.ForeColor = System.Drawing.Color.White;
+            this.LblCompraStock.Location = new System.Drawing.Point(413, 2);
+            this.LblCompraStock.Name = "LblCompraStock";
+            this.LblCompraStock.Size = new System.Drawing.Size(193, 24);
+            this.LblCompraStock.TabIndex = 2;
+            this.LblCompraStock.Text = "INGRESAR ORDEN";
+            this.LblCompraStock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtIdCompra
+            // 
+            this.TxtIdCompra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtIdCompra.Enabled = false;
+            this.TxtIdCompra.Location = new System.Drawing.Point(665, 4);
+            this.TxtIdCompra.Multiline = true;
+            this.TxtIdCompra.Name = "TxtIdCompra";
+            this.TxtIdCompra.ReadOnly = true;
+            this.TxtIdCompra.Size = new System.Drawing.Size(340, 21);
+            this.TxtIdCompra.TabIndex = 4;
+            this.TxtIdCompra.Visible = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.18201F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.8179959F));
+            this.tableLayoutPanel1.Controls.Add(this.PnlFormularioPedido, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(601, 390);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.8022F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.197802F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1011, 364);
+            this.tableLayoutPanel1.TabIndex = 3;
             // 
             // PnlFormularioPedido
             // 
             this.PnlFormularioPedido.BackColor = System.Drawing.Color.DarkSlateGray;
             this.PnlFormularioPedido.ColumnCount = 2;
-            this.PnlFormularioPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.19701F));
-            this.PnlFormularioPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.80299F));
+            this.PnlFormularioPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.6747F));
+            this.PnlFormularioPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.3253F));
             this.PnlFormularioPedido.Controls.Add(this.LblComentarios, 0, 3);
             this.PnlFormularioPedido.Controls.Add(this.TxtCantidad, 1, 1);
             this.PnlFormularioPedido.Controls.Add(this.TxtComentarios, 1, 3);
+            this.PnlFormularioPedido.Controls.Add(this.BtnCancelarCompra, 0, 4);
             this.PnlFormularioPedido.Controls.Add(this.LblProveedor, 0, 2);
             this.PnlFormularioPedido.Controls.Add(this.LblCantidad, 0, 1);
             this.PnlFormularioPedido.Controls.Add(this.LblNombreProducto, 0, 0);
@@ -606,16 +797,16 @@
             this.PnlFormularioPedido.Controls.Add(this.PnlBotonesIngresoCompra, 1, 4);
             this.PnlFormularioPedido.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.PnlFormularioPedido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlFormularioPedido.Location = new System.Drawing.Point(714, 352);
+            this.PnlFormularioPedido.Location = new System.Drawing.Point(3, 3);
             this.PnlFormularioPedido.Name = "PnlFormularioPedido";
             this.PnlFormularioPedido.RowCount = 5;
             this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.94225F));
             this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.6383F));
-            this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.62007F));
-            this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.84229F));
-            this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.7491F));
-            this.PnlFormularioPedido.Size = new System.Drawing.Size(898, 402);
-            this.PnlFormularioPedido.TabIndex = 3;
+            this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.25287F));
+            this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.38969F));
+            this.PnlFormularioPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.92264F));
+            this.PnlFormularioPedido.Size = new System.Drawing.Size(996, 350);
+            this.PnlFormularioPedido.TabIndex = 1;
             // 
             // LblComentarios
             // 
@@ -623,7 +814,7 @@
             this.LblComentarios.AutoSize = true;
             this.LblComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblComentarios.ForeColor = System.Drawing.Color.White;
-            this.LblComentarios.Location = new System.Drawing.Point(40, 200);
+            this.LblComentarios.Location = new System.Drawing.Point(38, 195);
             this.LblComentarios.Name = "LblComentarios";
             this.LblComentarios.Size = new System.Drawing.Size(109, 20);
             this.LblComentarios.TabIndex = 1;
@@ -634,10 +825,10 @@
             // 
             this.TxtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtCantidad.Enabled = false;
-            this.TxtCantidad.Location = new System.Drawing.Point(193, 51);
+            this.TxtCantidad.Location = new System.Drawing.Point(189, 43);
             this.TxtCantidad.Multiline = true;
             this.TxtCantidad.Name = "TxtCantidad";
-            this.TxtCantidad.Size = new System.Drawing.Size(702, 26);
+            this.TxtCantidad.Size = new System.Drawing.Size(804, 26);
             this.TxtCantidad.TabIndex = 17;
             // 
             // TxtComentarios
@@ -645,11 +836,24 @@
             this.TxtComentarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtComentarios.Location = new System.Drawing.Point(193, 142);
+            this.TxtComentarios.Location = new System.Drawing.Point(189, 145);
             this.TxtComentarios.Multiline = true;
             this.TxtComentarios.Name = "TxtComentarios";
-            this.TxtComentarios.Size = new System.Drawing.Size(702, 136);
+            this.TxtComentarios.Size = new System.Drawing.Size(804, 121);
             this.TxtComentarios.TabIndex = 19;
+            // 
+            // BtnCancelarCompra
+            // 
+            this.BtnCancelarCompra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnCancelarCompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BtnCancelarCompra.ForeColor = System.Drawing.Color.White;
+            this.BtnCancelarCompra.Location = new System.Drawing.Point(28, 292);
+            this.BtnCancelarCompra.Name = "BtnCancelarCompra";
+            this.BtnCancelarCompra.Size = new System.Drawing.Size(130, 35);
+            this.BtnCancelarCompra.TabIndex = 25;
+            this.BtnCancelarCompra.Text = "CANCELAR";
+            this.BtnCancelarCompra.UseVisualStyleBackColor = false;
+            this.BtnCancelarCompra.Click += new System.EventHandler(this.BtnCancelarCompra_Click);
             // 
             // LblProveedor
             // 
@@ -657,7 +861,7 @@
             this.LblProveedor.AutoSize = true;
             this.LblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblProveedor.ForeColor = System.Drawing.Color.White;
-            this.LblProveedor.Location = new System.Drawing.Point(50, 102);
+            this.LblProveedor.Location = new System.Drawing.Point(48, 98);
             this.LblProveedor.Name = "LblProveedor";
             this.LblProveedor.Size = new System.Drawing.Size(90, 20);
             this.LblProveedor.TabIndex = 1;
@@ -670,7 +874,7 @@
             this.LblCantidad.AutoSize = true;
             this.LblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCantidad.ForeColor = System.Drawing.Color.White;
-            this.LblCantidad.Location = new System.Drawing.Point(55, 54);
+            this.LblCantidad.Location = new System.Drawing.Point(53, 46);
             this.LblCantidad.Name = "LblCantidad";
             this.LblCantidad.Size = new System.Drawing.Size(80, 20);
             this.LblCantidad.TabIndex = 1;
@@ -683,7 +887,7 @@
             this.LblNombreProducto.AutoSize = true;
             this.LblNombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNombreProducto.ForeColor = System.Drawing.Color.White;
-            this.LblNombreProducto.Location = new System.Drawing.Point(22, 11);
+            this.LblNombreProducto.Location = new System.Drawing.Point(20, 9);
             this.LblNombreProducto.Name = "LblNombreProducto";
             this.LblNombreProducto.Size = new System.Drawing.Size(145, 20);
             this.LblNombreProducto.TabIndex = 1;
@@ -698,12 +902,12 @@
             this.PnlNombreProveedor.Controls.Add(this.CbxProveedor, 1, 0);
             this.PnlNombreProveedor.Controls.Add(this.TxtProveedor, 0, 0);
             this.PnlNombreProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlNombreProveedor.Location = new System.Drawing.Point(193, 88);
+            this.PnlNombreProveedor.Location = new System.Drawing.Point(189, 78);
             this.PnlNombreProveedor.Name = "PnlNombreProveedor";
             this.PnlNombreProveedor.RowCount = 1;
             this.PnlNombreProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.PnlNombreProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.PnlNombreProveedor.Size = new System.Drawing.Size(702, 48);
+            this.PnlNombreProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 61F));
+            this.PnlNombreProveedor.Size = new System.Drawing.Size(804, 61);
             this.PnlNombreProveedor.TabIndex = 3;
             // 
             // CbxProveedor
@@ -712,39 +916,39 @@
             this.CbxProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxProveedor.Enabled = false;
             this.CbxProveedor.FormattingEnabled = true;
-            this.CbxProveedor.Location = new System.Drawing.Point(354, 11);
+            this.CbxProveedor.Location = new System.Drawing.Point(405, 18);
             this.CbxProveedor.Name = "CbxProveedor";
-            this.CbxProveedor.Size = new System.Drawing.Size(345, 24);
+            this.CbxProveedor.Size = new System.Drawing.Size(396, 24);
             this.CbxProveedor.TabIndex = 3;
+            this.CbxProveedor.SelectedIndexChanged += new System.EventHandler(this.CbxProveedor_SelectedIndexChanged);
             // 
             // TxtProveedor
             // 
             this.TxtProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtProveedor.Enabled = false;
-            this.TxtProveedor.Location = new System.Drawing.Point(3, 9);
+            this.TxtProveedor.Location = new System.Drawing.Point(3, 16);
             this.TxtProveedor.Multiline = true;
             this.TxtProveedor.Name = "TxtProveedor";
-            this.TxtProveedor.Size = new System.Drawing.Size(345, 29);
+            this.TxtProveedor.Size = new System.Drawing.Size(396, 29);
             this.TxtProveedor.TabIndex = 18;
             // 
             // PnlBotonesIngresoCompra
             // 
             this.PnlBotonesIngresoCompra.ColumnCount = 3;
-            this.PnlBotonesIngresoCompra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.88116F));
-            this.PnlBotonesIngresoCompra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.44652F));
-            this.PnlBotonesIngresoCompra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.67233F));
-            this.PnlBotonesIngresoCompra.Controls.Add(this.BtnEmitirOrden, 1, 2);
-            this.PnlBotonesIngresoCompra.Controls.Add(this.BtnIngresarProducto, 1, 1);
-            this.PnlBotonesIngresoCompra.Controls.Add(this.BtnIngresarCompra, 2, 1);
-            this.PnlBotonesIngresoCompra.Controls.Add(this.BtnCancelarCompra, 0, 1);
+            this.PnlBotonesIngresoCompra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.18633F));
+            this.PnlBotonesIngresoCompra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.41615F));
+            this.PnlBotonesIngresoCompra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.32862F));
+            this.PnlBotonesIngresoCompra.Controls.Add(this.BtnEmitirOrden, 0, 0);
+            this.PnlBotonesIngresoCompra.Controls.Add(this.BtnIngresarCompra, 2, 0);
+            this.PnlBotonesIngresoCompra.Controls.Add(this.BtnIngresarProducto, 1, 0);
             this.PnlBotonesIngresoCompra.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlBotonesIngresoCompra.Location = new System.Drawing.Point(193, 284);
+            this.PnlBotonesIngresoCompra.Location = new System.Drawing.Point(189, 272);
             this.PnlBotonesIngresoCompra.Name = "PnlBotonesIngresoCompra";
             this.PnlBotonesIngresoCompra.RowCount = 3;
-            this.PnlBotonesIngresoCompra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.695652F));
-            this.PnlBotonesIngresoCompra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.65217F));
-            this.PnlBotonesIngresoCompra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.73913F));
-            this.PnlBotonesIngresoCompra.Size = new System.Drawing.Size(702, 115);
+            this.PnlBotonesIngresoCompra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.33333F));
+            this.PnlBotonesIngresoCompra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36F));
+            this.PnlBotonesIngresoCompra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.66667F));
+            this.PnlBotonesIngresoCompra.Size = new System.Drawing.Size(804, 75);
             this.PnlBotonesIngresoCompra.TabIndex = 4;
             // 
             // BtnEmitirOrden
@@ -752,55 +956,39 @@
             this.BtnEmitirOrden.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnEmitirOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BtnEmitirOrden.ForeColor = System.Drawing.Color.White;
-            this.BtnEmitirOrden.Location = new System.Drawing.Point(231, 66);
+            this.BtnEmitirOrden.Location = new System.Drawing.Point(26, 3);
             this.BtnEmitirOrden.Name = "BtnEmitirOrden";
-            this.BtnEmitirOrden.Size = new System.Drawing.Size(190, 42);
-            this.BtnEmitirOrden.TabIndex = 23;
+            this.BtnEmitirOrden.Size = new System.Drawing.Size(190, 33);
+            this.BtnEmitirOrden.TabIndex = 24;
             this.BtnEmitirOrden.Text = "EMITIR ORDEN";
             this.BtnEmitirOrden.UseVisualStyleBackColor = false;
-            this.BtnEmitirOrden.Visible = false;
             this.BtnEmitirOrden.Click += new System.EventHandler(this.BtnEmitirOrden_Click);
-            // 
-            // BtnIngresarProducto
-            // 
-            this.BtnIngresarProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnIngresarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.BtnIngresarProducto.ForeColor = System.Drawing.Color.White;
-            this.BtnIngresarProducto.Location = new System.Drawing.Point(231, 12);
-            this.BtnIngresarProducto.Name = "BtnIngresarProducto";
-            this.BtnIngresarProducto.Size = new System.Drawing.Size(190, 45);
-            this.BtnIngresarProducto.TabIndex = 20;
-            this.BtnIngresarProducto.Text = "INGRESAR PRODUCTO";
-            this.BtnIngresarProducto.UseVisualStyleBackColor = false;
-            this.BtnIngresarProducto.Visible = false;
-            this.BtnIngresarProducto.Click += new System.EventHandler(this.BtnIngresarProducto_Click);
             // 
             // BtnIngresarCompra
             // 
             this.BtnIngresarCompra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnIngresarCompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BtnIngresarCompra.ForeColor = System.Drawing.Color.White;
-            this.BtnIngresarCompra.Location = new System.Drawing.Point(477, 16);
+            this.BtnIngresarCompra.Location = new System.Drawing.Point(558, 3);
             this.BtnIngresarCompra.Name = "BtnIngresarCompra";
-            this.BtnIngresarCompra.Size = new System.Drawing.Size(190, 36);
+            this.BtnIngresarCompra.Size = new System.Drawing.Size(197, 33);
             this.BtnIngresarCompra.TabIndex = 22;
             this.BtnIngresarCompra.Text = "INGRESAR COMPRA";
             this.BtnIngresarCompra.UseVisualStyleBackColor = false;
             this.BtnIngresarCompra.Click += new System.EventHandler(this.BtnIngresarCompra_Click);
             // 
-            // BtnCancelarCompra
+            // BtnIngresarProducto
             // 
-            this.BtnCancelarCompra.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnCancelarCompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.BtnCancelarCompra.ForeColor = System.Drawing.Color.White;
-            this.BtnCancelarCompra.Location = new System.Drawing.Point(26, 16);
-            this.BtnCancelarCompra.Name = "BtnCancelarCompra";
-            this.BtnCancelarCompra.Size = new System.Drawing.Size(156, 37);
-            this.BtnCancelarCompra.TabIndex = 21;
-            this.BtnCancelarCompra.Text = "CANCELAR";
-            this.BtnCancelarCompra.UseVisualStyleBackColor = false;
-            this.BtnCancelarCompra.Visible = false;
-            this.BtnCancelarCompra.Click += new System.EventHandler(this.BtnCancelarCompra_Click);
+            this.BtnIngresarProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnIngresarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.BtnIngresarProducto.ForeColor = System.Drawing.Color.White;
+            this.BtnIngresarProducto.Location = new System.Drawing.Point(282, 3);
+            this.BtnIngresarProducto.Name = "BtnIngresarProducto";
+            this.BtnIngresarProducto.Size = new System.Drawing.Size(188, 33);
+            this.BtnIngresarProducto.TabIndex = 23;
+            this.BtnIngresarProducto.Text = "INGRESAR PRODUCTO";
+            this.BtnIngresarProducto.UseVisualStyleBackColor = false;
+            this.BtnIngresarProducto.Click += new System.EventHandler(this.BtnIngresarProducto_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -810,12 +998,12 @@
             this.tableLayoutPanel3.Controls.Add(this.CbxStockCompra, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.TxtNombreStock, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(193, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(189, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(702, 37);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(804, 32);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // CbxStockCompra
@@ -824,10 +1012,11 @@
             this.CbxStockCompra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxStockCompra.Enabled = false;
             this.CbxStockCompra.FormattingEnabled = true;
-            this.CbxStockCompra.Location = new System.Drawing.Point(354, 6);
+            this.CbxStockCompra.Location = new System.Drawing.Point(405, 3);
             this.CbxStockCompra.Name = "CbxStockCompra";
-            this.CbxStockCompra.Size = new System.Drawing.Size(345, 24);
+            this.CbxStockCompra.Size = new System.Drawing.Size(396, 24);
             this.CbxStockCompra.TabIndex = 3;
+            this.CbxStockCompra.SelectedIndexChanged += new System.EventHandler(this.CbxStockCompra_SelectedIndexChanged);
             // 
             // TxtNombreStock
             // 
@@ -835,116 +1024,12 @@
             this.TxtNombreStock.BackColor = System.Drawing.SystemColors.Window;
             this.TxtNombreStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtNombreStock.ForeColor = System.Drawing.Color.Black;
-            this.TxtNombreStock.Location = new System.Drawing.Point(3, 7);
+            this.TxtNombreStock.Location = new System.Drawing.Point(3, 4);
             this.TxtNombreStock.Multiline = true;
             this.TxtNombreStock.Name = "TxtNombreStock";
-            this.TxtNombreStock.Size = new System.Drawing.Size(345, 23);
+            this.TxtNombreStock.Size = new System.Drawing.Size(396, 23);
             this.TxtNombreStock.TabIndex = 16;
-            // 
-            // DtProveedores
-            // 
-            this.DtProveedores.AllowUserToAddRows = false;
-            this.DtProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DtProveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DtProveedores.BackgroundColor = System.Drawing.Color.DarkSlateGray;
-            this.DtProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DtProveedores.DefaultCellStyle = dataGridViewCellStyle5;
-            this.DtProveedores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DtProveedores.EnableHeadersVisualStyles = false;
-            this.DtProveedores.Location = new System.Drawing.Point(10, 94);
-            this.DtProveedores.MultiSelect = false;
-            this.DtProveedores.Name = "DtProveedores";
-            this.DtProveedores.ReadOnly = true;
-            this.DtProveedores.RowHeadersVisible = false;
-            this.DtProveedores.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.DtProveedores.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.DtProveedores.RowTemplate.Height = 24;
-            this.DtProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DtProveedores.Size = new System.Drawing.Size(489, 255);
-            this.DtProveedores.TabIndex = 3;
-            // 
-            // DtProveedor
-            // 
-            this.DtProveedor.AllowUserToAddRows = false;
-            this.DtProveedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DtProveedor.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DtProveedor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            this.DtProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DtProveedor.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DtProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DtProveedor.EnableHeadersVisualStyles = false;
-            this.DtProveedor.Location = new System.Drawing.Point(3, 94);
-            this.DtProveedor.MultiSelect = false;
-            this.DtProveedor.Name = "DtProveedor";
-            this.DtProveedor.ReadOnly = true;
-            this.DtProveedor.RowHeadersVisible = false;
-            this.DtProveedor.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DtProveedor.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DtProveedor.RowTemplate.Height = 24;
-            this.DtProveedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DtProveedor.Size = new System.Drawing.Size(1, 255);
-            this.DtProveedor.TabIndex = 4;
-            // 
-            // BtnModificar
-            // 
-            this.BtnModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.BtnModificar.ForeColor = System.Drawing.Color.White;
-            this.BtnModificar.Location = new System.Drawing.Point(258, 3);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(211, 29);
-            this.BtnModificar.TabIndex = 12;
-            this.BtnModificar.Text = "MODIFICAR";
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.BtnCancelar.ForeColor = System.Drawing.Color.White;
-            this.BtnCancelar.Location = new System.Drawing.Point(258, 73);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(211, 31);
-            this.BtnCancelar.TabIndex = 13;
-            this.BtnCancelar.Text = "CANCELAR";
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click_1);
-            // 
-            // BtnStockProveedor
-            // 
-            this.BtnStockProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnStockProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.BtnStockProveedor.ForeColor = System.Drawing.Color.White;
-            this.BtnStockProveedor.Location = new System.Drawing.Point(22, 73);
-            this.BtnStockProveedor.Name = "BtnStockProveedor";
-            this.BtnStockProveedor.Size = new System.Drawing.Size(211, 31);
-            this.BtnStockProveedor.TabIndex = 14;
-            this.BtnStockProveedor.Text = "ENLAZAR PROVEEDOR";
-            this.BtnStockProveedor.UseVisualStyleBackColor = false;
-            this.BtnStockProveedor.Click += new System.EventHandler(this.BtnStockProveedor_Click);
+            this.TxtNombreStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombreStock_KeyPress);
             // 
             // Compra_Stock
             // 
@@ -952,22 +1037,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1612, 754);
             this.Controls.Add(this.PnlPrincipal);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Compra_Stock";
             this.Text = "Compra_Stock";
-            this.Load += new System.EventHandler(this.Compra_Stock_Load);
-            this.PnlPrincipal.ResumeLayout(false);
             this.PnlProveedores.ResumeLayout(false);
+            this.PnlProveedor.ResumeLayout(false);
+            this.PnlProveedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtProveedores)).EndInit();
             this.PnlComentarios.ResumeLayout(false);
             this.PnlComentarios.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.PnlFormulario.ResumeLayout(false);
             this.PnlFormulario.PerformLayout();
-            this.PnlProveedor.ResumeLayout(false);
-            this.PnlProveedor.PerformLayout();
             this.PnlStock.ResumeLayout(false);
             this.PnlStock.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtStock)).EndInit();
+            this.PnlPrincipal.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.PnlFormularioPedido.ResumeLayout(false);
             this.PnlFormularioPedido.PerformLayout();
             this.PnlNombreProveedor.ResumeLayout(false);
@@ -975,17 +1063,16 @@
             this.PnlBotonesIngresoCompra.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtProveedores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtProveedor)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel PnlPrincipal;
         private System.Windows.Forms.Panel PnlProveedores;
         private System.Windows.Forms.TableLayoutPanel PnlProveedor;
+        private System.Windows.Forms.DataGridView DtProveedor;
+        private System.Windows.Forms.DataGridView DtProveedores;
         private System.Windows.Forms.Label LblListaProveedores;
         private System.Windows.Forms.TextBox TxtFiltroProveedorDT;
         private System.Windows.Forms.TableLayoutPanel PnlComentarios;
@@ -994,6 +1081,9 @@
         private System.Windows.Forms.Label LblProveedores;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button BtnIngresarProveedor;
+        private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Button BtnStockProveedor;
+        private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.TableLayoutPanel PnlFormulario;
         private System.Windows.Forms.TextBox TxtIDproveedor;
         private System.Windows.Forms.Label LblPrecio;
@@ -1013,6 +1103,16 @@
         private System.Windows.Forms.TextBox TxtDireccion;
         private System.Windows.Forms.TextBox TxtRut;
         private System.Windows.Forms.TextBox TxtRazonSocial;
+        private System.Windows.Forms.TableLayoutPanel PnlStock;
+        private System.Windows.Forms.Label LblTituloListaStock;
+        private System.Windows.Forms.DataGridView DtStock;
+        private System.Windows.Forms.TextBox TxtFiltroStock;
+        private System.Windows.Forms.Panel PnlPrincipal;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TextBox TxtIDStock;
+        private System.Windows.Forms.Label LblCompraStock;
+        private System.Windows.Forms.TextBox TxtIdCompra;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel PnlFormularioPedido;
         private System.Windows.Forms.Label LblComentarios;
         private System.Windows.Forms.TextBox TxtCantidad;
@@ -1024,21 +1124,12 @@
         private System.Windows.Forms.ComboBox CbxProveedor;
         private System.Windows.Forms.TextBox TxtProveedor;
         private System.Windows.Forms.TableLayoutPanel PnlBotonesIngresoCompra;
-        private System.Windows.Forms.Button BtnEmitirOrden;
-        private System.Windows.Forms.Button BtnIngresarProducto;
         private System.Windows.Forms.Button BtnIngresarCompra;
-        private System.Windows.Forms.Button BtnCancelarCompra;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.ComboBox CbxStockCompra;
         private System.Windows.Forms.TextBox TxtNombreStock;
-        private System.Windows.Forms.TableLayoutPanel PnlStock;
-        private System.Windows.Forms.Label LblTituloListaStock;
-        private System.Windows.Forms.DataGridView DtStock;
-        private System.Windows.Forms.TextBox TxtFiltroStock;
-        private System.Windows.Forms.DataGridView DtProveedor;
-        private System.Windows.Forms.DataGridView DtProveedores;
-        private System.Windows.Forms.Button BtnModificar;
-        private System.Windows.Forms.Button BtnStockProveedor;
-        private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Button BtnIngresarProducto;
+        private System.Windows.Forms.Button BtnCancelarCompra;
+        private System.Windows.Forms.Button BtnEmitirOrden;
     }
 }
