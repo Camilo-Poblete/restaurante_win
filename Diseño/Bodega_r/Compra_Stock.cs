@@ -53,35 +53,35 @@ namespace Diseño.Bodega_r
             CbxProducto.ValueMember = "id_producto";
         }
 
-
-        private void TxtProveedor_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Cargar_proveedores_orden(TxtProveedor.Text, TxtIDStock.Text);
+            CargarCbxStock(TxtProducto.Text);
         }
-
-
-
-
-
 
         private void CargarProveedores()
         {
+
+
             Acceso ac = new Acceso();
             var conn = ac.Conectar();
             conn.Open();
+
 
             DataTable dt = new DataTable();
             string query = "select id_proveedor,rut,razon_social,direccion,telefono,email,descripcion from proveedor";
             OracleCommand command = new OracleCommand(query, conn);
             OracleDataAdapter da = new OracleDataAdapter(command);
             da.Fill(dt);
-            DtProveedores.DataSource = dt;
 
+            DtProveedores.DataSource = dt;
         }
+
 
 
         private void CargarStock()
         {
+
+
             Acceso ac = new Acceso();
             var conn = ac.Conectar();
             conn.Open();
@@ -97,10 +97,6 @@ namespace Diseño.Bodega_r
         }
 
 
-        private void TxtProducto_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            CargarCbxStock(TxtProducto.Text);
-        }
 
         private void TxtFiltroStock_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -118,6 +114,8 @@ namespace Diseño.Bodega_r
             DtStock.DataSource = dt;
         }
 
+
+
         private void TxtFiltroStock_MouseClick(object sender, MouseEventArgs e)
         {
             TxtFiltroStock.ForeColor = Color.Black;
@@ -132,10 +130,9 @@ namespace Diseño.Bodega_r
             }
         }
 
-        private void DtStock_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
+
+
 
         private void BtnCancelarCompra_Click(object sender, EventArgs e)
         {
@@ -252,56 +249,14 @@ namespace Diseño.Bodega_r
             }
         }
 
+
+
         private void CbxProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
             TxtIdProducto.Text = CbxProducto.SelectedValue.ToString();
         }
 
-        private void DtProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int fila = e.RowIndex;
 
-            if (fila != -1)
-            {
-                string id_proveedor;
-                id_proveedor = DtProveedores.Rows[fila].Cells[0].Value.ToString();
-                TxtIDproveedor.Text = id_proveedor;
-
-                string Rut;
-                Rut = DtProveedores.Rows[fila].Cells[1].Value.ToString();
-                TxtRut.Text = Rut;
-
-                string razon_social;
-                razon_social = DtProveedores.Rows[fila].Cells[2].Value.ToString();
-                TxtRazonSocial.Text = razon_social;
-
-                string direccion;
-                direccion = DtProveedores.Rows[fila].Cells[3].Value.ToString();
-                TxtDireccion.Text = direccion;
-
-                string telefono;
-                telefono = DtProveedores.Rows[fila].Cells[4].Value.ToString();
-                TxtTelefono.Text = telefono;
-
-                string email;
-                email = DtProveedores.Rows[fila].Cells[5].Value.ToString();
-                TxtEmail.Text = email;
-
-                string descripcion;
-                descripcion = DtProveedores.Rows[fila].Cells[6].Value.ToString();
-                TxtDescripcion.Text = descripcion;
-
-                BtnCancelar.Visible = true;
-                BtnModificar.Visible = true;
-                BtnIngresarProveedor.Visible = false;
-                BtnStockProveedor.Visible = true;
-
-                TxtProducto.Enabled = true;
-                CbxProducto.Enabled = true;
-                TxtPrecio.Enabled = true;
-
-            }
-        }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
@@ -380,78 +335,11 @@ namespace Diseño.Bodega_r
 
                 CargarProveedores();
             }
-        }
-
-        private void TxtFiltroProveedorDT_MouseClick(object sender, MouseEventArgs e)
-        {
-            TxtFiltroProveedorDT.ForeColor = Color.Black;
-            TxtFiltroProveedorDT.Text = "";
-        }
-
-        private void TxtFiltroProveedorDT_Leave(object sender, EventArgs e)
-        {
-            if (TxtFiltroProveedorDT.Text == "")
-            {
-                TxtFiltroProveedorDT.Text = "Ingrese nombre un nombre de producto para filtrar.";
-            }
-        }
-
-        private void TxtFiltroProveedorDT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            Acceso ac = new Acceso();
-            var conn = ac.Conectar();
-            conn.Open();
-
-
-            DataTable dt = new DataTable();
-            string query = "select id_proveedor,rut,razon_social,direccion,telefono,email,descripcion from proveedor where razon_social like '%" + TxtFiltroProveedorDT.Text + "%'";
-            OracleCommand command = new OracleCommand(query, conn);
-            OracleDataAdapter da = new OracleDataAdapter(command);
-            da.Fill(dt);
-
-            DtProveedores.DataSource = dt;
-        }
-
-        private void BtnIngresarCompra_Click(object sender, EventArgs e)
-        {
-            LblCompraStock.Text = "INGRESE PRODUCTOS ORDEN";
-            LblTituloListaStock.Text = "LISTA COMPRA";
-            Acceso ac = new Acceso();
-            var conn = ac.Conectar();
-            conn.Open();
-
-
-            string message = "¿Estas seguro de agregar el proveedor?.";
-            string caption = "Añadir proveedor.";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result;
-
-            result = MessageBox.Show(message, caption, buttons);
-            if (result == System.Windows.Forms.DialogResult.Yes)
-            {
-
-                using (OracleCommand command = new OracleCommand("INSERTAR_ORDEN_COMPRA", conn))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.Add("V_DESCRIPCION", OracleDbType.Varchar2).Value = TxtComentarios.Text;
-
-                    command.ExecuteNonQuery();
-
-                }
-
-                string query = "select MAX(id_orden) as id_compra from ordencompra";
-                OracleCommand cmd = new OracleCommand(query, conn);
-                OracleDataReader reg = cmd.ExecuteReader();
-
-                if (reg.Read())
-                {
-                    TxtIdCompra.Text = reg["id_compra"].ToString();
-                    Cargar_orden_compra(TxtIdCompra.Text);
 
 
 
-                }
-            }
+
+
             BtnIngresarProducto.Visible = true;
             BtnIngresarCompra.Visible = false;
             BtnCancelar.Visible = true;
@@ -463,21 +351,7 @@ namespace Diseño.Bodega_r
             CbxStockCompra.Enabled = true;
 
         }
-        private void Cargar_orden_compra(string v_id_compra)
-        {
-            Acceso ac = new Acceso();
-            var conn = ac.Conectar();
-            conn.Open();
 
-
-            DataTable dt = new DataTable();
-            string query = "select op.id_orden,pr.nombre,op.cantidad,pp.precio_compra from ordenproducto op join producto pr on pr.id_producto = op.id_producto join proveedorproducto pp on pp.id_producto = op.id_producto where op.id_orden = '" + v_id_compra + "'";
-            OracleCommand command = new OracleCommand(query, conn);
-            OracleDataAdapter da = new OracleDataAdapter(command);
-            da.Fill(dt);
-
-            DtStock.DataSource = dt;
-        }
         private void BtnEmitirOrden_Click(object sender, EventArgs e)
         {
             LblCompraStock.Text = "Lista Stock";
@@ -535,13 +409,155 @@ namespace Diseño.Bodega_r
 
                 BtnEmitirOrden.Visible = true;
 
-                Cargar_orden_compra(TxtIdCompra.Text);
+
             }
 
 
         }
 
-      
+        private void DtProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int fila = e.RowIndex;
+
+            if (fila != -1)
+            {
+                string id_proveedor;
+                id_proveedor = DtProveedores.Rows[fila].Cells[0].Value.ToString();
+                TxtIDproveedor.Text = id_proveedor;
+
+                string Rut;
+                Rut = DtProveedores.Rows[fila].Cells[1].Value.ToString();
+                TxtRut.Text = Rut;
+
+                string razon_social;
+                razon_social = DtProveedores.Rows[fila].Cells[2].Value.ToString();
+                TxtRazonSocial.Text = razon_social;
+
+                string direccion;
+                direccion = DtProveedores.Rows[fila].Cells[3].Value.ToString();
+                TxtDireccion.Text = direccion;
+
+                string telefono;
+                telefono = DtProveedores.Rows[fila].Cells[4].Value.ToString();
+                TxtTelefono.Text = telefono;
+
+                string email;
+                email = DtProveedores.Rows[fila].Cells[5].Value.ToString();
+                TxtEmail.Text = email;
+
+                string descripcion;
+                descripcion = DtProveedores.Rows[fila].Cells[6].Value.ToString();
+                TxtDescripcion.Text = descripcion;
+
+                BtnCancelar.Visible = true;
+                BtnModificar.Visible = true;
+                BtnIngresarProveedor.Visible = false;
+                BtnStockProveedor.Visible = true;
+
+                TxtProducto.Enabled = true;
+                CbxProducto.Enabled = true;
+                TxtPrecio.Enabled = true;
+            }
+        }
+
+        private void TxtFiltroProveedorDT_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            TxtFiltroProveedorDT.ForeColor = Color.Black;
+            TxtFiltroProveedorDT.Text = "";
+        }
+
+        private void TxtFiltroProveedorDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Acceso ac = new Acceso();
+            var conn = ac.Conectar();
+            conn.Open();
+
+
+            DataTable dt = new DataTable();
+            string query = "select id_proveedor,rut,razon_social,direccion,telefono,email,descripcion from proveedor where razon_social like '%" + TxtFiltroProveedorDT.Text + "%'";
+            OracleCommand command = new OracleCommand(query, conn);
+            OracleDataAdapter da = new OracleDataAdapter(command);
+            da.Fill(dt);
+
+            DtProveedores.DataSource = dt;
+        }
+
+        private void BtnIngresarCompra_Click(object sender, EventArgs e)
+        {
+
+            LblCompraStock.Text = "INGRESE PRODUCTOS ORDEN";
+            LblTituloListaStock.Text = "LISTA COMPRA";
+            Acceso ac = new Acceso();
+            var conn = ac.Conectar();
+            conn.Open();
+
+
+            string message = "¿Estas seguro de agregar el proveedor?.";
+            string caption = "Añadir proveedor.";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+
+            result = MessageBox.Show(message, caption, buttons);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+
+                using (OracleCommand command = new OracleCommand("INSERTAR_ORDEN_COMPRA", conn))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.Add("V_DESCRIPCION", OracleDbType.Varchar2).Value = TxtComentarios.Text;
+
+                    command.ExecuteNonQuery();
+
+                }
+
+                string query = "select MAX(id_orden) as id_compra from ordencompra";
+                OracleCommand cmd = new OracleCommand(query, conn);
+                OracleDataReader reg = cmd.ExecuteReader();
+
+                if (reg.Read())
+                {
+                    TxtIdCompra.Text = reg["id_compra"].ToString();
+                    Cargar_orden_compra(TxtIdCompra.Text);
+
+
+
+                }
+            }
+            BtnIngresarProducto.Visible = true;
+            BtnIngresarCompra.Visible = false;
+            BtnCancelar.Visible = true;
+
+
+            TxtCantidad.Enabled = true;
+            TxtProveedor.Enabled = true;
+            CbxProveedor.Enabled = true;
+            CbxStockCompra.Enabled = true;
+        }
+
+
+        private void Cargar_orden_compra(string v_id_compra)
+        {
+            Acceso ac = new Acceso();
+            var conn = ac.Conectar();
+            conn.Open();
+
+
+            DataTable dt = new DataTable();
+            string query = "select op.id_orden,pr.nombre,op.cantidad,pp.precio_compra from ordenproducto op join producto pr on pr.id_producto = op.id_producto join proveedorproducto pp on pp.id_producto = op.id_producto where op.id_orden = '" + v_id_compra + "'";
+            OracleCommand command = new OracleCommand(query, conn);
+            OracleDataAdapter da = new OracleDataAdapter(command);
+            da.Fill(dt);
+
+            DtStock.DataSource = dt;
+        }
+
+        private void TxtProveedor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Cargar_proveedores_orden(TxtProveedor.Text, TxtIDStock.Text);
+        }
+
+
 
         private void Cargar_proveedores_orden(string v_nombre, string v_id)
         {
@@ -563,6 +579,9 @@ namespace Diseño.Bodega_r
             CbxProveedor.DisplayMember = "razon_social";
             CbxProveedor.ValueMember = "id_proveedor";
         }
+
+
+
 
         private void Cargar_stock_orden(string v_nombre)
         {
@@ -594,10 +613,6 @@ namespace Diseño.Bodega_r
         {
             TxtIDStock.Text = CbxStockCompra.SelectedValue.ToString();
         }
-
-        private void CbxProveedor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
+
 }
