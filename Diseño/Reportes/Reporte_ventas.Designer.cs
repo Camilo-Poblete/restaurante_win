@@ -38,9 +38,10 @@ namespace Diseño.Reportes
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1154, 630);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Reporte_ventas";
             this.Text = "Reporte_ventas";
+            this.Load += new System.EventHandler(this.Reporte_ventas_Load);
             this.ResumeLayout(false);
 
         }

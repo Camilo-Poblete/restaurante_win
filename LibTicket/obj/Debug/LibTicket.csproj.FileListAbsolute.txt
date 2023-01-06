@@ -1,0 +1,6 @@
+C:\Users\camil\Desktop\Restaurante\Restaurante\LibTicket\bin\Debug\LibTicket.dll
+C:\Users\camil\Desktop\Restaurante\Restaurante\LibTicket\bin\Debug\LibTicket.pdb
+C:\Users\camil\Desktop\Restaurante\Restaurante\LibTicket\obj\Debug\LibTicket.csprojAssemblyReference.cache
+C:\Users\camil\Desktop\Restaurante\Restaurante\LibTicket\obj\Debug\LibTicket.csproj.CoreCompileInputs.cache
+C:\Users\camil\Desktop\Restaurante\Restaurante\LibTicket\obj\Debug\LibTicket.dll
+C:\Users\camil\Desktop\Restaurante\Restaurante\LibTicket\obj\Debug\LibTicket.pdb
