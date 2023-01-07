@@ -74,3 +74,4 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csprojA
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Empleados.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Registro_Clientes.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\bin\Debug\LibPrintTicket.dll
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Reportes.Reporte_stock.resources

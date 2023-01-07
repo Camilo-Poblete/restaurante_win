@@ -37,13 +37,13 @@ namespace Diseño.Administrador
             DtPreparaciones.ReadOnly = true;
             Esconder_Elementos();
 
-
             DtPreparaciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
 
         private void productos_Load(object sender, EventArgs e)
         {
+            CbxFiltro.DataSource = Datos();
             CbxFiltro.DisplayMember = "categoria";
             CbxFiltro.ValueMember = "id_categoria";
 
@@ -76,7 +76,7 @@ namespace Diseño.Administrador
 
         }
 
-       
+
         private void BtnImagen_Click(object sender, EventArgs e)
         {
             try
@@ -86,7 +86,7 @@ namespace Diseño.Administrador
                     string imagen = openFileDialog1.FileName;
                     PicFotoPlato.Image = Image.FromFile(imagen);
 
-                  
+
                 }
             }
             catch (Exception)
@@ -95,7 +95,7 @@ namespace Diseño.Administrador
             }
         }
 
-     
+
         private void limpiar_formulario()
         {
             TxtNombrePlato.Text = "";
@@ -111,7 +111,7 @@ namespace Diseño.Administrador
             }
         }
 
-     
+
         private void BtnAgregarProducto_Click(object sender, EventArgs e)
         {
             Acceso ac = new Acceso();
@@ -188,7 +188,7 @@ namespace Diseño.Administrador
 
         }
 
-        
+
         private void CargarGrilla()
         {
             try
@@ -233,7 +233,7 @@ namespace Diseño.Administrador
             }
         }
 
-        
+
         private void BtnModificar_Preparacion_Click(object sender, EventArgs e)
         {
 
@@ -304,7 +304,7 @@ namespace Diseño.Administrador
 
         }
 
- 
+
         private void BtnVolver_Click(object sender, EventArgs e)
         {
             string message = "¿Estas seguro de no modificar la preparacion?.";
@@ -335,7 +335,7 @@ namespace Diseño.Administrador
             CargarGrilla();
         }
 
-        
+
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             Acceso ac = new Acceso();
@@ -363,7 +363,7 @@ namespace Diseño.Administrador
             }
         }
 
-       
+
         private void BtnRecargarGrilla_Click(object sender, EventArgs e)
         {
             CargarGrilla();
@@ -374,7 +374,7 @@ namespace Diseño.Administrador
             v_cbx_filtro = CbxFiltro.SelectedIndex.ToString();
         }
 
-        
+
         private void CbxTipoPlato_TextChanged(object sender, EventArgs e)
         {
             v_cbx_tipo = CbxTipoPlato.SelectedIndex.ToString();
@@ -382,28 +382,7 @@ namespace Diseño.Administrador
 
         private void DtPreparaciones_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           
-        }
 
-        private void CbxFiltro_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (CbxFiltro.SelectedIndex == 0)
-            {
-                CargarGrilla();
-            }
-            else
-            {
-
-                Acceso ac = new Acceso();
-                var conn = ac.Conectar();
-                conn.Open();
-
-                OracleDataAdapter adaptador = new OracleDataAdapter("select pl.id_plato,pl.nombre_plato,pl.descripcion,pl.tiempopreparacion,pl.valor_plato,pl.disponibilidad,pl.id_categoria,ca.categoria from plato pl join categoria ca on pl.id_categoria = ca.id_categoria where pl.id_categoria LIKE '%" + CbxFiltro.SelectedIndex + "%'", conn);
-                DataTable tabla = new DataTable();
-                adaptador.Fill(tabla);
-                DtPreparaciones.DataSource = tabla;
-                conn.Close();
-            }
         }
 
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
@@ -573,5 +552,34 @@ namespace Diseño.Administrador
         {
             CargarGrilla();
         }
+
+        private void CbxFiltro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+            if (CbxFiltro.SelectedIndex == 0)
+            {
+                CargarGrilla();
+            }
+            else
+            {
+
+                Acceso ac = new Acceso();
+                var conn = ac.Conectar();
+                conn.Open();
+
+                OracleDataAdapter adaptador = new OracleDataAdapter("select pl.id_plato,pl.nombre_plato,pl.descripcion,pl.tiempopreparacion,pl.valor_plato,pl.disponibilidad,pl.id_categoria,ca.categoria from plato pl join categoria ca on pl.id_categoria = ca.id_categoria where pl.id_categoria LIKE '%" + CbxFiltro.SelectedIndex + "%'", conn);
+                DataTable tabla = new DataTable();
+                adaptador.Fill(tabla);
+                DtPreparaciones.DataSource = tabla;
+                conn.Close();
+            }
+        }
+
+        private void DtPreparaciones_Click_1(object sender, EventArgs e)
+        {
+            CargarGrilla();
+        }
     }
+
 }

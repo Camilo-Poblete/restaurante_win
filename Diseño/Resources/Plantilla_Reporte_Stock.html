@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title of the document</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td style="width:10%"></td>
+            <td style="width:55%" align="center" valign="top">
+                <table>
+                    <tr><td align="center"><h4 style="margin:0px">@NombreEmpresa</h4></td></tr>
+                    <tr><td align="center">Direccion: @Direccion, @Comuna, @Region </td></tr>
+                    <tr><td align="center">Telefono: @Fono</td></tr>
+                </table>
+            </td>
+            <td style="width:35%">
+                <table class="border" style="width:100%">
+                    <tr><td align="center">RUT: 72.754.700-2</td></tr>
+                    <tr><td align="center" style="background-color:#D8D8D8">Reporte</td></tr>
+                    <tr><td align="center">Stock</td></tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr><td colspan="3" height="20"></td></tr>
+
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%">Usuario:</td>
+                        <td colspan="3" style="width:80%;border-bottom:1px solid black">@CLIENTE</td>
+                    </tr>
+                </table>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:12%">Fecha:</td>
+                        <td style="width:38%;border-bottom:1px solid black">@FECHA</td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr><td colspan="3" height="30"></td></tr>
+        <tr>
+            <td style="width:20%">Stock Critico:</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%;">
+                    <thead>
+                        <tr style="background-color:#D8D8D8">
+                            <th>Cod.Stock</th>
+                            <th>Nombre</th>
+                            <th>Stock Act.</th>
+                            <th>Stock Critico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @FILASCRITICO
+                        <tr style="height: 31px;">
+                            <td style="height: 31px;"></td>
+                            <td style="height: 31px;"></td>
+                            <td style="height: 31px;"></td>
+                            <td style="height: 31px;"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+
+        <tr><td colspan="3" height="30"></td></tr>
+        <tr>
+            <td style="width:20%">Stock Vencido:</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%;">
+                    <thead>
+                        <tr style="background-color:#D8D8D8">
+                            <th>Cod.Stock</th>
+                            <th>Nombre</th>
+                            <th>Stock Act.</th>
+                            <th>Stock Critico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @FILASVENCIDO
+                        <tr style="height: 31px;">
+                            <td style="height: 31px;"></td>
+                            <td style="height: 31px;"></td>
+                            <td style="height: 31px;"></td>
+                            <td style="height: 31px;"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

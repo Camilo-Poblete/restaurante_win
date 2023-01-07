@@ -75,7 +75,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.tableLayoutPanel2.ColumnCount = 6;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.666057F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.166667F));
@@ -100,7 +100,7 @@
             // BtnVolver
             // 
             this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnVolver.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BtnVolver.ForeColor = System.Drawing.Color.White;
             this.BtnVolver.Location = new System.Drawing.Point(803, 14);
             this.BtnVolver.Name = "BtnVolver";
@@ -112,7 +112,7 @@
             // BtnEliminados
             // 
             this.BtnEliminados.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnEliminados.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnEliminados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.BtnEliminados.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.BtnEliminados.Location = new System.Drawing.Point(976, 12);
             this.BtnEliminados.Name = "BtnEliminados";
@@ -157,7 +157,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;

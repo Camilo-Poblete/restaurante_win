@@ -49,7 +49,6 @@
             this.BtnStock = new System.Windows.Forms.Button();
             this.SubmenuReportes = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.btnrptventa = new System.Windows.Forms.Button();
             this.btnrptcompra = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -64,6 +63,8 @@
             this.btnproductos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnrptpagos = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -147,7 +148,6 @@
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.MenuVertical.Controls.Add(this.panel7);
             this.MenuVertical.Controls.Add(this.btnsalir);
-            this.MenuVertical.Controls.Add(this.panel12);
             this.MenuVertical.Controls.Add(this.BtnCliente);
             this.MenuVertical.Controls.Add(this.panel10);
             this.MenuVertical.Controls.Add(this.panel9);
@@ -234,10 +234,10 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel12.Location = new System.Drawing.Point(73, 491);
+            this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(11, 34);
+            this.panel12.Size = new System.Drawing.Size(10, 31);
             this.panel12.TabIndex = 9;
             // 
             // BtnCliente
@@ -337,8 +337,10 @@
             // 
             // SubmenuReportes
             // 
-            this.SubmenuReportes.Controls.Add(this.panel13);
+            this.SubmenuReportes.Controls.Add(this.btnrptpagos);
             this.SubmenuReportes.Controls.Add(this.panel11);
+            this.SubmenuReportes.Controls.Add(this.panel13);
+            this.SubmenuReportes.Controls.Add(this.panel12);
             this.SubmenuReportes.Controls.Add(this.btnrptventa);
             this.SubmenuReportes.Controls.Add(this.btnrptcompra);
             this.SubmenuReportes.Location = new System.Drawing.Point(73, 470);
@@ -351,20 +353,11 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel13.Location = new System.Drawing.Point(0, 73);
+            this.panel13.Location = new System.Drawing.Point(0, 35);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(11, 36);
             this.panel13.TabIndex = 8;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel11.Location = new System.Drawing.Point(0, 20);
-            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(11, 33);
-            this.panel11.TabIndex = 8;
             // 
             // btnrptventa
             // 
@@ -374,10 +367,10 @@
             this.btnrptventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptventa.ForeColor = System.Drawing.Color.White;
             this.btnrptventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrptventa.Location = new System.Drawing.Point(3, 75);
+            this.btnrptventa.Location = new System.Drawing.Point(11, 35);
             this.btnrptventa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnrptventa.Name = "btnrptventa";
-            this.btnrptventa.Size = new System.Drawing.Size(223, 34);
+            this.btnrptventa.Size = new System.Drawing.Size(210, 34);
             this.btnrptventa.TabIndex = 8;
             this.btnrptventa.Text = "Reporte Ventas";
             this.btnrptventa.UseVisualStyleBackColor = false;
@@ -391,7 +384,7 @@
             this.btnrptcompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptcompra.ForeColor = System.Drawing.Color.White;
             this.btnrptcompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrptcompra.Location = new System.Drawing.Point(11, 20);
+            this.btnrptcompra.Location = new System.Drawing.Point(9, -3);
             this.btnrptcompra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnrptcompra.Name = "btnrptcompra";
             this.btnrptcompra.Size = new System.Drawing.Size(211, 34);
@@ -551,6 +544,32 @@
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel11.Location = new System.Drawing.Point(0, 75);
+            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(11, 36);
+            this.panel11.TabIndex = 9;
+            // 
+            // btnrptpagos
+            // 
+            this.btnrptpagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnrptpagos.FlatAppearance.BorderSize = 0;
+            this.btnrptpagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrptpagos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrptpagos.ForeColor = System.Drawing.Color.White;
+            this.btnrptpagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrptpagos.Location = new System.Drawing.Point(13, 73);
+            this.btnrptpagos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnrptpagos.Name = "btnrptpagos";
+            this.btnrptpagos.Size = new System.Drawing.Size(210, 34);
+            this.btnrptpagos.TabIndex = 10;
+            this.btnrptpagos.Text = "Reporte pagos";
+            this.btnrptpagos.UseVisualStyleBackColor = false;
+            this.btnrptpagos.Click += new System.EventHandler(this.btnrptpagos_Click);
+            // 
             // Bodega_restau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -608,7 +627,6 @@
         private System.Windows.Forms.Button BtnCocina;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button BtnCliente;
         private System.Windows.Forms.PictureBox btnsalir;
@@ -616,6 +634,8 @@
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.Label LblCargo;
         private System.Windows.Forms.Label LblNombre;
+        private System.Windows.Forms.Button btnrptpagos;
+        private System.Windows.Forms.Panel panel11;
     }
 }
 

@@ -29,10 +29,10 @@ namespace Diseño.Finanzas_r
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlPrincipal = new System.Windows.Forms.Panel();
             this.PnlActivos = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -100,6 +100,7 @@ namespace Diseño.Finanzas_r
             // 
             // PnlActivos
             // 
+            this.PnlActivos.BackColor = System.Drawing.Color.DarkSlateGray;
             this.PnlActivos.ColumnCount = 1;
             this.PnlActivos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.PnlActivos.Controls.Add(this.label8, 0, 1);
@@ -134,14 +135,14 @@ namespace Diseño.Finanzas_r
             this.DtActivos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DtActivos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DtActivos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtActivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtActivos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.DtActivos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtActivos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DtActivos.EnableHeadersVisualStyles = false;
@@ -151,11 +152,11 @@ namespace Diseño.Finanzas_r
             this.DtActivos.ReadOnly = true;
             this.DtActivos.RowHeadersVisible = false;
             this.DtActivos.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.DtActivos.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.DtActivos.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DtActivos.RowTemplate.Height = 24;
             this.DtActivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DtActivos.Size = new System.Drawing.Size(553, 576);
@@ -164,6 +165,7 @@ namespace Diseño.Finanzas_r
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.24475F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.74126F));
@@ -205,7 +207,7 @@ namespace Diseño.Finanzas_r
             // TxtPropina
             // 
             this.TxtPropina.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtPropina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.TxtPropina.BackColor = System.Drawing.Color.DarkSlateGray;
             this.TxtPropina.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtPropina.Enabled = false;
             this.TxtPropina.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,7 +221,7 @@ namespace Diseño.Finanzas_r
             // BtnBoletaElec
             // 
             this.BtnBoletaElec.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnBoletaElec.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnBoletaElec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.BtnBoletaElec.FlatAppearance.BorderSize = 0;
             this.BtnBoletaElec.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.BtnBoletaElec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -238,7 +240,7 @@ namespace Diseño.Finanzas_r
             // btndescargar
             // 
             this.btndescargar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btndescargar.BackColor = System.Drawing.Color.SeaGreen;
+            this.btndescargar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.btndescargar.FlatAppearance.BorderSize = 0;
             this.btndescargar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.btndescargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -257,7 +259,7 @@ namespace Diseño.Finanzas_r
             // BtnPagar
             // 
             this.BtnPagar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnPagar.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnPagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.BtnPagar.FlatAppearance.BorderSize = 0;
             this.BtnPagar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.BtnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -275,7 +277,7 @@ namespace Diseño.Finanzas_r
             // BtnVolver
             // 
             this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnVolver.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.BtnVolver.FlatAppearance.BorderSize = 0;
             this.BtnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -385,7 +387,7 @@ namespace Diseño.Finanzas_r
             // TxtIdBoleta
             // 
             this.TxtIdBoleta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtIdBoleta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.TxtIdBoleta.BackColor = System.Drawing.Color.DarkSlateGray;
             this.TxtIdBoleta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtIdBoleta.Enabled = false;
             this.TxtIdBoleta.ForeColor = System.Drawing.Color.White;
@@ -481,6 +483,7 @@ namespace Diseño.Finanzas_r
             // 
             // PnlDia
             // 
+            this.PnlDia.BackColor = System.Drawing.Color.DarkSlateGray;
             this.PnlDia.ColumnCount = 3;
             this.PnlDia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.PnlDia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98F));
@@ -503,15 +506,15 @@ namespace Diseño.Finanzas_r
             this.DtVentasDia.AllowUserToAddRows = false;
             this.DtVentasDia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DtVentasDia.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DtVentasDia.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtVentasDia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DtVentasDia.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtVentasDia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DtVentasDia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtVentasDia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DtVentasDia.EnableHeadersVisualStyles = false;
@@ -521,11 +524,11 @@ namespace Diseño.Finanzas_r
             this.DtVentasDia.ReadOnly = true;
             this.DtVentasDia.RowHeadersVisible = false;
             this.DtVentasDia.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DtVentasDia.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.DtVentasDia.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DtVentasDia.RowTemplate.Height = 24;
             this.DtVentasDia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DtVentasDia.Size = new System.Drawing.Size(444, 576);
@@ -549,7 +552,7 @@ namespace Diseño.Finanzas_r
             // BtnVolver_peddias
             // 
             this.BtnVolver_peddias.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnVolver_peddias.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnVolver_peddias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.BtnVolver_peddias.FlatAppearance.BorderSize = 0;
             this.BtnVolver_peddias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.BtnVolver_peddias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -567,6 +570,7 @@ namespace Diseño.Finanzas_r
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.31579F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.52632F));
@@ -697,7 +701,7 @@ namespace Diseño.Finanzas_r
             // TxtEfectivo
             // 
             this.TxtEfectivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtEfectivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.TxtEfectivo.BackColor = System.Drawing.Color.DarkSlateGray;
             this.TxtEfectivo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtEfectivo.ForeColor = System.Drawing.Color.White;
@@ -711,7 +715,7 @@ namespace Diseño.Finanzas_r
             // TxtDebitoCredito
             // 
             this.TxtDebitoCredito.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtDebitoCredito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.TxtDebitoCredito.BackColor = System.Drawing.Color.DarkSlateGray;
             this.TxtDebitoCredito.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtDebitoCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDebitoCredito.ForeColor = System.Drawing.Color.White;
@@ -725,7 +729,7 @@ namespace Diseño.Finanzas_r
             // TxtTransferencia
             // 
             this.TxtTransferencia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtTransferencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.TxtTransferencia.BackColor = System.Drawing.Color.DarkSlateGray;
             this.TxtTransferencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTransferencia.ForeColor = System.Drawing.Color.White;
@@ -739,7 +743,7 @@ namespace Diseño.Finanzas_r
             // TxtPropinasDia
             // 
             this.TxtPropinasDia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtPropinasDia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.TxtPropinasDia.BackColor = System.Drawing.Color.DarkSlateGray;
             this.TxtPropinasDia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtPropinasDia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPropinasDia.ForeColor = System.Drawing.Color.White;

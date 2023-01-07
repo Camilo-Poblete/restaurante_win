@@ -136,6 +136,7 @@ namespace Diseño
         private void btnrptcompra_Click(object sender, EventArgs e)
         {
             SubmenuReportes.Visible = false;
+            AbrirFormEnPanel(new Reporte_stock());
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
