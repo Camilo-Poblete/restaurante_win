@@ -118,6 +118,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Administrador.Designer.cs">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrador\Ajustes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     <Compile Include="Reportes\Reporte_ventas.Designer.cs">
       <DependentUpon>Reporte_ventas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administrador\Administrador.resx">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrador\Ajustes.resx">
       <DependentUpon>Ajustes.cs</DependentUpon>
     </EmbeddedResource>
@@ -460,6 +469,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Plantilla_Reporte_Ventas.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsalir.Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsalir.Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnsalir.Image3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

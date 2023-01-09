@@ -30,24 +30,42 @@ using Diseño.Cocinero_r;
 
 namespace Diseño
 {
-    public partial class Panel_Administradores : Form
+    public partial class Panel_Administradores : MaterialForm
     {
         public Panel_Administradores()
         {
             InitializeComponent();
-            informacion_usuario();
+
+
+
         }
 
-      
-       
-
-
-        private void btnMaximizar_Click(object sender, EventArgs e)
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true;
-            
+
+        }
+
+        private void Panel_Administradores_Load(object sender, EventArgs e)
+        {
+
+        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static new void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
+        private extern static new void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+
+
+
+
+        private void panelContenedor_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnproductos_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -59,10 +77,23 @@ namespace Diseño
             DialogResult result;
 
             result = MessageBox.Show(message, caption, buttons);
-            if(result == System.Windows.Forms.DialogResult.Yes)
+            if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 Application.Exit();
             }
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
@@ -72,42 +103,26 @@ namespace Diseño
             btnMaximizar.Visible = true;
         }
 
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Panel_Administrador_Load(object sender, EventArgs e)
-        {
-
-        }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-
-
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void MenuVertical_Paint(object sender, PaintEventArgs e)
+        private void btnReportes_Click(object sender, EventArgs e)
         {
-
+            //SubmenuReportes.Visible = true;
         }
 
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        private void btnrptcompra_Click(object sender, EventArgs e)
         {
 
+           // SubmenuReportes.Visible = false;
+            AbrirFormHija(new Reporte_stock());
         }
 
 
-
-        private void AbrirFormEnPanel(object formhijo)
+        private void AbrirFormHija(object formhijo)
         {
             if (this.panelContenedor.Controls.Count > 0)
                 this.panelContenedor.Controls.RemoveAt(0);
@@ -120,23 +135,19 @@ namespace Diseño
 
         }
 
-
-
-        private void btnReportes_Click(object sender, EventArgs e)
+        private void btnReportes_Click_1(object sender, EventArgs e)
         {
             SubmenuReportes.Visible = true;
+        }
+
+        private void btnrptcompra_Click_1(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
         }
 
         private void btnrptventa_Click(object sender, EventArgs e)
         {
             SubmenuReportes.Visible = false;
-            AbrirFormEnPanel(new Reporte_ventas());
-        }
-
-        private void btnrptcompra_Click(object sender, EventArgs e)
-        {
-            SubmenuReportes.Visible = false;
-            AbrirFormEnPanel(new Reporte_stock());
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
@@ -144,63 +155,10 @@ namespace Diseño
             Application.Exit();
         }
 
-
-
-        private void informacion_usuario()
+        private void btnproductos_Click_1(object sender, EventArgs e)
         {
-            LblNombre.Text = CacheInicioSesion.Nombres;
-            LblRol.Text = CacheInicioSesion.Rol;
-        }
-
-        private void btnproductos_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new productos());
-        }
-
-        private void BtnCliente_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Registro_Clientes());
-        }
-
-        private void BTNventas_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Ingresar_Pedido());
-        }
-
-        private void BtnStock_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Stock());
-        }
-
-        private void BtnCompras_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Compra_Stock());
-        }
-
-        private void BtnCaja_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Caja());
-        }
-
-        private void BtnCocina_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Pedidos_Cocina());
-        }
-
-        private void BtnEmpleados_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Empleados());
-        }
-
-        private void BtnAjustesUsuario_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Ajuste_usuario());
-
-        }
-
-        private void BtnSettings_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Ajustes());
+            AbrirFormHija(new productos());
         }
     }
+
 }

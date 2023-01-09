@@ -1,16 +1,16 @@
-﻿namespace Diseño
+﻿namespace Diseño.Administrador
 {
-    partial class Panel_Administradores
+    partial class Administrador
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,17 +20,16 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.PnlInformacion = new System.Windows.Forms.Panel();
             this.LblInformacion = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -59,19 +58,18 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.BtnStock = new System.Windows.Forms.Button();
             this.BTNventas = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnproductos = new System.Windows.Forms.Button();
             this.btninicio = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.LblTituloBarra = new System.Windows.Forms.Label();
+            this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.BtnSettings = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panelContenedor.SuspendLayout();
             this.MenuVertical.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.PnlInformacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnAjustesUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
@@ -96,61 +94,51 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1681, 966);
             this.panelContenedor.TabIndex = 3;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint_1);
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.Controls.Add(this.PnlInformacion);
+            this.MenuVertical.Controls.Add(this.panel5);
+            this.MenuVertical.Controls.Add(this.btnReportes);
+            this.MenuVertical.Controls.Add(this.panel7);
+            this.MenuVertical.Controls.Add(this.BtnCompras);
+            this.MenuVertical.Controls.Add(this.BtnAjustesUsuario);
+            this.MenuVertical.Controls.Add(this.btnsalir);
+            this.MenuVertical.Controls.Add(this.LblRol);
+            this.MenuVertical.Controls.Add(this.LblCargo);
+            this.MenuVertical.Controls.Add(this.LblNombre);
+            this.MenuVertical.Controls.Add(this.SubmenuReportes);
+            this.MenuVertical.Controls.Add(this.panel2);
+            this.MenuVertical.Controls.Add(this.panel12);
+            this.MenuVertical.Controls.Add(this.panel8);
+            this.MenuVertical.Controls.Add(this.panel6);
+            this.MenuVertical.Controls.Add(this.BtnCocina);
+            this.MenuVertical.Controls.Add(this.BtnCaja);
+            this.MenuVertical.Controls.Add(this.BtnCliente);
+            this.MenuVertical.Controls.Add(this.BtnEmpleados);
+            this.MenuVertical.Controls.Add(this.panel4);
+            this.MenuVertical.Controls.Add(this.panel3);
+            this.MenuVertical.Controls.Add(this.BtnStock);
+            this.MenuVertical.Controls.Add(this.BTNventas);
             this.MenuVertical.Controls.Add(this.panel1);
+            this.MenuVertical.Controls.Add(this.btnproductos);
+            this.MenuVertical.Controls.Add(this.btninicio);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 44);
+            this.MenuVertical.Margin = new System.Windows.Forms.Padding(4);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(307, 922);
+            this.MenuVertical.Size = new System.Drawing.Size(294, 922);
             this.MenuVertical.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.PnlInformacion);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.btnReportes);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.BtnCompras);
-            this.panel1.Controls.Add(this.BtnAjustesUsuario);
-            this.panel1.Controls.Add(this.btnsalir);
-            this.panel1.Controls.Add(this.LblRol);
-            this.panel1.Controls.Add(this.LblCargo);
-            this.panel1.Controls.Add(this.LblNombre);
-            this.panel1.Controls.Add(this.SubmenuReportes);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.BtnCocina);
-            this.panel1.Controls.Add(this.BtnCaja);
-            this.panel1.Controls.Add(this.BtnCliente);
-            this.panel1.Controls.Add(this.BtnEmpleados);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.BtnStock);
-            this.panel1.Controls.Add(this.BTNventas);
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.btnproductos);
-            this.panel1.Controls.Add(this.btninicio);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 922);
-            this.panel1.TabIndex = 2;
             // 
             // PnlInformacion
             // 
             this.PnlInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.PnlInformacion.Controls.Add(this.LblInformacion);
-            this.PnlInformacion.Location = new System.Drawing.Point(208, 38);
+            this.PnlInformacion.Location = new System.Drawing.Point(191, 21);
             this.PnlInformacion.Name = "PnlInformacion";
-            this.PnlInformacion.Size = new System.Drawing.Size(80, 37);
+            this.PnlInformacion.Size = new System.Drawing.Size(87, 37);
             this.PnlInformacion.TabIndex = 0;
             this.PnlInformacion.Visible = false;
             // 
@@ -190,7 +178,6 @@
             this.btnReportes.TabIndex = 13;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = false;
-            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click_1);
             // 
             // panel7
             // 
@@ -222,11 +209,10 @@
             // 
             this.BtnAjustesUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BtnAjustesUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAjustesUsuario.Image = global::Diseño.Properties.Resources.SettingsUser;
-            this.BtnAjustesUsuario.Location = new System.Drawing.Point(18, 849);
+            this.BtnAjustesUsuario.Location = new System.Drawing.Point(85, 884);
             this.BtnAjustesUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.BtnAjustesUsuario.Name = "BtnAjustesUsuario";
-            this.BtnAjustesUsuario.Size = new System.Drawing.Size(38, 50);
+            this.BtnAjustesUsuario.Size = new System.Drawing.Size(37, 31);
             this.BtnAjustesUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnAjustesUsuario.TabIndex = 16;
             this.BtnAjustesUsuario.TabStop = false;
@@ -235,15 +221,13 @@
             // 
             this.btnsalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsalir.Image = global::Diseño.Properties.Resources.btnsalir3;
-            this.btnsalir.Location = new System.Drawing.Point(9, 791);
+            this.btnsalir.Location = new System.Drawing.Point(0, 872);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(62, 50);
             this.btnsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnsalir.TabIndex = 16;
             this.btnsalir.TabStop = false;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // LblRol
             // 
@@ -316,7 +300,6 @@
             this.btnrptcompra.TabIndex = 18;
             this.btnrptcompra.Text = "Reporte Stock";
             this.btnrptcompra.UseVisualStyleBackColor = false;
-            this.btnrptcompra.Click += new System.EventHandler(this.btnrptcompra_Click_1);
             // 
             // panel9
             // 
@@ -343,7 +326,6 @@
             this.btnrptventa.TabIndex = 16;
             this.btnrptventa.Text = "Reporte Ventas";
             this.btnrptventa.UseVisualStyleBackColor = false;
-            this.btnrptventa.Click += new System.EventHandler(this.btnrptventa_Click);
             // 
             // panel2
             // 
@@ -501,25 +483,24 @@
             this.BTNventas.Text = "Ventas";
             this.BTNventas.UseVisualStyleBackColor = false;
             // 
-            // panel11
+            // panel1
             // 
-            this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel11.Location = new System.Drawing.Point(0, 165);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(7, 49);
-            this.panel11.TabIndex = 2;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel1.Location = new System.Drawing.Point(0, 165);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(7, 49);
+            this.panel1.TabIndex = 2;
             // 
             // btnproductos
             // 
             this.btnproductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnproductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproductos.FlatAppearance.BorderSize = 0;
-            this.btnproductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnproductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.btnproductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnproductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproductos.ForeColor = System.Drawing.Color.White;
-            this.btnproductos.Image = global::Diseño.Properties.Resources.producto;
             this.btnproductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnproductos.Location = new System.Drawing.Point(8, 165);
             this.btnproductos.Margin = new System.Windows.Forms.Padding(4);
@@ -528,7 +509,7 @@
             this.btnproductos.TabIndex = 1;
             this.btnproductos.Text = "Productos";
             this.btnproductos.UseVisualStyleBackColor = false;
-            this.btnproductos.Click += new System.EventHandler(this.btnproductos_Click_1);
+            this.btnproductos.Click += new System.EventHandler(this.btnproductos_Click);
             // 
             // btninicio
             // 
@@ -544,8 +525,8 @@
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.BarraTitulo.Controls.Add(this.btnRestaurar);
             this.BarraTitulo.Controls.Add(this.LblTituloBarra);
+            this.BarraTitulo.Controls.Add(this.btnRestaurar);
             this.BarraTitulo.Controls.Add(this.BtnSettings);
             this.BarraTitulo.Controls.Add(this.btnMinimizar);
             this.BarraTitulo.Controls.Add(this.btnMaximizar);
@@ -556,22 +537,6 @@
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1681, 44);
             this.BarraTitulo.TabIndex = 1;
-            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = global::Diseño.Properties.Resources.res1;
-            this.btnRestaurar.Location = new System.Drawing.Point(1576, 7);
-            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 3;
-            this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
             // LblTituloBarra
             // 
@@ -581,10 +546,23 @@
             this.LblTituloBarra.ForeColor = System.Drawing.Color.White;
             this.LblTituloBarra.Location = new System.Drawing.Point(0, 0);
             this.LblTituloBarra.Name = "LblTituloBarra";
-            this.LblTituloBarra.Size = new System.Drawing.Size(147, 24);
+            this.LblTituloBarra.Size = new System.Drawing.Size(110, 24);
             this.LblTituloBarra.TabIndex = 4;
-            this.LblTituloBarra.Text = "Restaurante XXI";
+            this.LblTituloBarra.Text = "Restaurante";
             this.LblTituloBarra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestaurar.Location = new System.Drawing.Point(1576, 7);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
+            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRestaurar.TabIndex = 3;
+            this.btnRestaurar.TabStop = false;
+            this.btnRestaurar.Visible = false;
             // 
             // BtnSettings
             // 
@@ -602,7 +580,6 @@
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Diseño.Properties.Resources.minimazar;
             this.btnMinimizar.Location = new System.Drawing.Point(1521, 7);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
@@ -610,13 +587,11 @@
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 2;
             this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnMaximizar
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = global::Diseño.Properties.Resources.maxi;
             this.btnMaximizar.Location = new System.Drawing.Point(1576, 7);
             this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximizar.Name = "btnMaximizar";
@@ -624,13 +599,11 @@
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 1;
             this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = global::Diseño.Properties.Resources.cerrar;
             this.btnCerrar.Location = new System.Drawing.Point(1631, 7);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
@@ -638,23 +611,19 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // Panel_Administradores
+            // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1681, 966);
             this.Controls.Add(this.panelContenedor);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Panel_Administradores";
-            this.Text = "Restaurante";
-            this.Load += new System.EventHandler(this.Panel_Administradores_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Administrador";
+            this.Text = "Administrador";
             this.panelContenedor.ResumeLayout(false);
             this.MenuVertical.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.MenuVertical.PerformLayout();
             this.PnlInformacion.ResumeLayout(false);
             this.PnlInformacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnAjustesUsuario)).EndInit();
@@ -675,15 +644,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.Panel BarraTitulo;
-        private System.Windows.Forms.PictureBox btnRestaurar;
-        private System.Windows.Forms.Label LblTituloBarra;
-        private System.Windows.Forms.PictureBox BtnSettings;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
-        private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Panel MenuVertical;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel PnlInformacion;
         private System.Windows.Forms.Label LblInformacion;
         private System.Windows.Forms.Panel panel5;
@@ -712,9 +673,15 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button BtnStock;
         private System.Windows.Forms.Button BTNventas;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnproductos;
         private System.Windows.Forms.PictureBox btninicio;
+        private System.Windows.Forms.Panel BarraTitulo;
+        private System.Windows.Forms.Label LblTituloBarra;
+        private System.Windows.Forms.PictureBox btnRestaurar;
+        private System.Windows.Forms.PictureBox BtnSettings;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnMaximizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }
-

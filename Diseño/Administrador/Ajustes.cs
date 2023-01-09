@@ -127,5 +127,10 @@ namespace Diseño.Administrador
         {
 
         }
+
+        private void LblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,10 +45,14 @@ namespace Diseño
             lblError.Visible = false;
         }
 
+
+
+
+
         private void BtnOlvidarContra_MouseEnter(object sender, EventArgs e)
         {
             BtnOlvidarContra.ForeColor = Color.Red;
-        } 
+        }
 
         private void BtnOlvidarContra_MouseLeave(object sender, EventArgs e)
         {
@@ -233,9 +237,9 @@ namespace Diseño
         }
 
 
-      
 
-     
+
+
         private void ChkMostrar_CheckedChanged(object sender, EventArgs e)
         {
             TxtContrasena.PasswordChar = ChkMostrar.Checked ? '\0' : '*';
@@ -253,7 +257,7 @@ namespace Diseño
             }
         }
 
-   
+
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "")
@@ -270,7 +274,7 @@ namespace Diseño
             }
         }
 
-    
+
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
@@ -292,5 +296,44 @@ namespace Diseño
         {
 
         }
+
+        private void TxtContrasena_TextChanged_1(object sender, EventArgs e)
+        {
+            if (TxtContrasena.Text != "Contraseña")
+            {
+                TxtContrasena.PasswordChar = '*';
+            }
+            else
+            {
+                TxtContrasena.PasswordChar = '\0';
+            }
+        }
+
+        private void txtUsuario_Leave_1(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "Usuario";
+            }
+        }
+
+        private void TxtContrasena_Leave_1(object sender, EventArgs e)
+        {
+            if (TxtContrasena.Text == "")
+            {
+                TxtContrasena.Text = "Contraseña";
+            }
+        }
+
+        private void txtUsuario_Click_1(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "";
+        }
+
+        private void TxtContrasena_Click_1(object sender, EventArgs e)
+        {
+            TxtContrasena.Text = "";
+        }
     }
+
 }
