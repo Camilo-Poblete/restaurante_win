@@ -16,6 +16,8 @@ using Oracle.ManagedDataAccess.Client;
 using Capa_Transversal;
 using System.Runtime.InteropServices;
 using Acceso_Datos;
+using Diseño.Administrador;
+
 namespace Diseño
 {
     public partial class Login : MaterialForm
@@ -87,8 +89,8 @@ namespace Diseño
                             switch (CacheInicioSesion.Rol_id)
                             {
                                 case 1:
-                                    Panel_Administradores pagina_administrador = new Panel_Administradores();
-                                    pagina_administrador.Show();
+                                     Panel_Administradores pagina_administrador = new Panel_Administradores();
+                                   pagina_administrador.Show();
                                     pagina_administrador.FormClosed += CerrarSesion;
                                     this.Hide();
                                     break;

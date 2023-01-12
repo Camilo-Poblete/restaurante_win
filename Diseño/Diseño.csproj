@@ -8,12 +8,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Diseño</RootNamespace>
     <AssemblyName>Diseño</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -118,12 +119,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrador\Administrador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrador\Administrador.Designer.cs">
-      <DependentUpon>Administrador.cs</DependentUpon>
-    </Compile>
     <Compile Include="Administrador\Ajustes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +130,12 @@
     </Compile>
     <Compile Include="Administrador\Ajuste_usuario.Designer.cs">
       <DependentUpon>Ajuste_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Panel_Administradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Panel_Administradores.Designer.cs">
+      <DependentUpon>Panel_Administradores.cs</DependentUpon>
     </Compile>
     <Compile Include="Administrador\productos.cs">
       <SubType>Form</SubType>
@@ -202,23 +203,23 @@
     <Compile Include="Garzones_r\Garzones.Designer.cs">
       <DependentUpon>Garzones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Recuperar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Recuperar.Designer.cs">
       <DependentUpon>Recuperar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Administrador\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Administrador\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Administrador\Panel_Administradores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrador\Panel_Administradores.Designer.cs">
-      <DependentUpon>Panel_Administradores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -240,9 +241,13 @@
     <Compile Include="Reportes\Reporte_ventas.Designer.cs">
       <DependentUpon>Reporte_ventas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Administrador\Administrador.resx">
-      <DependentUpon>Administrador.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="Resources\Panel_Administradores.resx">
+      <DependentUpon>Panel_Administradores.cs</DependentUpon>
+    </None>
+    <None Include="Resources\Panel_Administradores.Designer.cs">
+      <DependentUpon>Panel_Administradores.cs</DependentUpon>
+    </None>
+    <None Include="Resources\Panel_Administradores.cs" />
     <EmbeddedResource Include="Administrador\Ajustes.resx">
       <DependentUpon>Ajustes.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Panel_Administradores.resx">
+      <DependentUpon>Panel_Administradores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\productos.resx">
       <DependentUpon>productos.cs</DependentUpon>
@@ -282,14 +290,14 @@
     <EmbeddedResource Include="Garzones_r\Garzones.resx">
       <DependentUpon>Garzones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Recuperar.resx">
       <DependentUpon>Recuperar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Administrador\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrador\Panel_Administradores.resx">
-      <DependentUpon>Panel_Administradores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

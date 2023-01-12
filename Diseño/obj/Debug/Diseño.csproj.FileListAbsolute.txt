@@ -59,7 +59,6 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Bodega_
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Recepcion.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Cocinero.resources
-C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Panel_Administradores.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Recuperar.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.productos.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.Ajustes.resources
@@ -70,9 +69,10 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzone
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Bodega_r.Stock.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Ajuste_usuario.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Reportes.Reporte_ventas.resources
-C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csprojAssemblyReference.cache
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Empleados.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Garzones_r.Registro_Clientes.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\bin\Debug\LibPrintTicket.dll
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Reportes.Reporte_stock.resources
-C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.Administrador.resources
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.Panel_Administradores.resources
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csprojAssemblyReference.cache
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Inicio.resources

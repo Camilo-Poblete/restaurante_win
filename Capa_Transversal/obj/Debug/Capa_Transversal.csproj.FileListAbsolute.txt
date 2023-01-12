@@ -26,4 +26,4 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Capa_Transversal\obj\Debug\Capa_T
 C:\Users\camil\Desktop\Restaurante\Restaurante\Capa_Transversal\obj\Debug\Capa_Transversal.csproj.CopyComplete
 C:\Users\camil\Desktop\Restaurante\Restaurante\Capa_Transversal\obj\Debug\Capa_Transversal.exe
 C:\Users\camil\Desktop\Restaurante\Restaurante\Capa_Transversal\obj\Debug\Capa_Transversal.pdb
-C:\Users\camil\Desktop\Restaurante\Restaurante\Capa_Transversal\obj\Debug\Capa_Transversal.csproj.AssemblyReference.cache
+C:\Users\camil\Desktop\Restaurante\Restaurante\Capa_Transversal\obj\Debug\Capa_Transversal.csprojAssemblyReference.cache

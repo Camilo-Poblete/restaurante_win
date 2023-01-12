@@ -311,6 +311,84 @@ namespace Diseño.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a using System;
+        ///using System.Collections.Generic;
+        ///using System.ComponentModel;
+        ///using System.Data;
+        ///using System.Drawing;
+        ///using System.Linq;
+        ///using System.Text;
+        ///using System.Threading.Tasks;
+        ///using System.Windows.Forms;
+        ///using Capa_Transversal;
+        ///using MaterialSkin;
+        ///using MaterialSkin.Controls;
+        ///using Modelo_Negocio;
+        ///using Oracle.ManagedDataAccess.Client;
+        ///using Oracle.ManagedDataAccess.Types;
+        ///using System.Windows.Input;
+        ///using System.Globalization;
+        ///
+        ///using iTextSharp.text;
+        ///using System.IO;
+        ///using iTextSharp.text.pdf;
+        ///us [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string Panel_Administradores {
+            get {
+                return ResourceManager.GetString("Panel_Administradores", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a namespace Diseño
+        ///{
+        ///    partial class Panel_Administradores
+        ///    {
+        ///        /// &lt;summary&gt;
+        ///        /// Variable del diseñador necesaria.
+        ///        /// &lt;/summary&gt;
+        ///        private System.ComponentModel.IContainer components = null;
+        ///
+        ///        /// &lt;summary&gt;
+        ///        /// Limpiar los recursos que se estén usando.
+        ///        /// &lt;/summary&gt;
+        ///        /// &lt;param name=&quot;disposing&quot;&gt;true si los recursos administrados se deben desechar; false en caso contrario.&lt;/param&gt;
+        ///        protected override void Dispose(bool disposing)
+        ///        { [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string Panel_Administradores_Designer {
+            get {
+                return ResourceManager.GetString("Panel_Administradores_Designer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;root&gt;
+        ///  &lt;!-- 
+        ///    Microsoft ResX Schema 
+        ///    
+        ///    Version 2.0
+        ///    
+        ///    The primary goals of this format is to allow a simple XML format 
+        ///    that is mostly human readable. The generation and parsing of the 
+        ///    various data types are done through the TypeConverter classes 
+        ///    associated with the data types.
+        ///    
+        ///    Example:
+        ///    
+        ///    ... ado.net/XML headers &amp; schema ...
+        ///    &lt;resheader name=&quot;resmimetype&quot;&gt;text/microsoft-resx&lt;/resheader&gt;
+        ///    &lt;resheader n [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string Panel_Administradores1 {
+            get {
+                return ResourceManager.GetString("Panel_Administradores1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
         ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
         ///&lt;head&gt;

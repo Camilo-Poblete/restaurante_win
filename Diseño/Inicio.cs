@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Diseño.Administrador
+namespace Diseño
 {
-    public partial class Administrador : Form
+    public partial class Inicio : Form
     {
-        public Administrador()
+        public Inicio()
         {
             InitializeComponent();
         }
 
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnproductos_Click(object sender, EventArgs e)
+        private void Inicio_Load(object sender, EventArgs e)
         {
 
         }
