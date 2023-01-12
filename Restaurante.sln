@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acceso_Datos", "Acceso_Dato
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo_Negocio", "Modelo_Negocio\Modelo_Negocio.csproj", "{052D81E8-2DA3-4D46-AB5F-5A9D345418A6}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstaladorRestaurante", "..\..\Aplicacion\InstaladorRestaurante\InstaladorRestaurante.vdproj", "{01EDBD52-F820-419A-BB05-865A861F650A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,8 @@ Global
 		{052D81E8-2DA3-4D46-AB5F-5A9D345418A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{052D81E8-2DA3-4D46-AB5F-5A9D345418A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{052D81E8-2DA3-4D46-AB5F-5A9D345418A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01EDBD52-F820-419A-BB05-865A861F650A}.Debug|Any CPU.ActiveCfg = Debug
+		{01EDBD52-F820-419A-BB05-865A861F650A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

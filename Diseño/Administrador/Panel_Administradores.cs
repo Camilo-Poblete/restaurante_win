@@ -110,7 +110,7 @@ namespace Diseño.Administrador
 
         private void BtnEmpleados_Click(object sender, EventArgs e)
         {
-
+            AbrirFormEnPanel(new Empleados());
         }
 
         private void BarraTitulo_MouseDown_1(object sender, MouseEventArgs e)

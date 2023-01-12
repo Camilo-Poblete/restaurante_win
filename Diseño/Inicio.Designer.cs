@@ -37,6 +37,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.LblFecha = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.TablaGraficos = new System.Windows.Forms.TableLayoutPanel();
             this.ChartMasVendidos = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ChartStock = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -46,8 +47,8 @@
             this.LblVentasDia = new System.Windows.Forms.Label();
             this.LblTotalDia = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.TablaGraficos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChartMasVendidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChartStock)).BeginInit();
@@ -63,12 +64,27 @@
             this.LblFecha.AutoSize = true;
             this.LblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFecha.ForeColor = System.Drawing.Color.White;
-            this.LblFecha.Location = new System.Drawing.Point(730, 382);
+            this.LblFecha.Location = new System.Drawing.Point(303, 83);
             this.LblFecha.Name = "LblFecha";
             this.LblFecha.Size = new System.Drawing.Size(105, 29);
             this.LblFecha.TabIndex = 1;
             this.LblFecha.Text = "FECHA:";
             this.LblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(180, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(481, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "INFORMACION IMPORTANTE DEL DIA:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TablaGraficos
             // 
@@ -87,7 +103,7 @@
             this.TablaGraficos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.63935F));
             this.TablaGraficos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.36066F));
             this.TablaGraficos.Size = new System.Drawing.Size(1564, 793);
-            this.TablaGraficos.TabIndex = 2;
+            this.TablaGraficos.TabIndex = 3;
             // 
             // ChartMasVendidos
             // 
@@ -124,6 +140,7 @@
             title1.Name = "Title1";
             title1.Text = "PLATOS MAS VENDIDOS DE HOY.";
             this.ChartMasVendidos.Titles.Add(title1);
+            this.ChartMasVendidos.Click += new System.EventHandler(this.ChartMasVendidos_Click_1);
             // 
             // ChartStock
             // 
@@ -252,8 +269,8 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -263,21 +280,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(772, 204);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(766, 102);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "FECHA:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -286,12 +288,27 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Location = new System.Drawing.Point(3, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(766, 102);
             this.label2.TabIndex = 0;
-            this.label2.Text = "INFORMACION IMPORTANTE DEL DIA:";
+            this.label2.Text = "FECHA:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(766, 102);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "INFORMACION IMPORTANTE DEL DIA:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Inicio
             // 
@@ -300,6 +317,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1564, 793);
             this.Controls.Add(this.TablaGraficos);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LblFecha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inicio";
@@ -320,6 +338,7 @@
         #endregion
 
         private System.Windows.Forms.Label LblFecha;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel TablaGraficos;
         private System.Windows.Forms.DataVisualization.Charting.Chart ChartMasVendidos;
         private System.Windows.Forms.DataVisualization.Charting.Chart ChartStock;
@@ -329,7 +348,7 @@
         private System.Windows.Forms.Label LblVentasDia;
         private System.Windows.Forms.Label LblTotalDia;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

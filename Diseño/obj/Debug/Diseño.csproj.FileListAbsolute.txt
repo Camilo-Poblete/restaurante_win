@@ -76,3 +76,7 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Reporte
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Administrador.Panel_Administradores.resources
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.csprojAssemblyReference.cache
 C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.Inicio.resources
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\bin\Debug\Diseño.exe.manifest
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\bin\Debug\Diseño.application
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.exe.manifest
+C:\Users\camil\Desktop\Restaurante\Restaurante\Diseño\obj\Debug\Diseño.application
