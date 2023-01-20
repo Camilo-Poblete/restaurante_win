@@ -33,4 +33,4 @@ C:\Users\camil\Desktop\Restaurante\Restaurante\Modelo_Negocio\obj\Debug\Modelo_N
 C:\Users\camil\Desktop\Restaurante\Restaurante\Modelo_Negocio\obj\Debug\Modelo_Negocio.csproj.CopyComplete
 C:\Users\camil\Desktop\Restaurante\Restaurante\Modelo_Negocio\obj\Debug\Modelo_Negocio.exe
 C:\Users\camil\Desktop\Restaurante\Restaurante\Modelo_Negocio\obj\Debug\Modelo_Negocio.pdb
-C:\Users\camil\Desktop\Restaurante\Restaurante\Modelo_Negocio\obj\Debug\Modelo_Negocio.csprojAssemblyReference.cache
+C:\Users\camil\Desktop\Restaurante\Restaurante\Modelo_Negocio\obj\Debug\Modelo_Negocio.csproj.AssemblyReference.cache

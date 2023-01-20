@@ -150,7 +150,7 @@ namespace Diseño.Administrador
             // 
             this.CbxImpresora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.CbxImpresora.FormattingEnabled = true;
-            this.CbxImpresora.Location = new System.Drawing.Point(377, 13);
+            this.CbxImpresora.Location = new System.Drawing.Point(377, 12);
             this.CbxImpresora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CbxImpresora.Name = "CbxImpresora";
             this.CbxImpresora.Size = new System.Drawing.Size(369, 24);

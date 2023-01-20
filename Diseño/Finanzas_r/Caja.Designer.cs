@@ -449,7 +449,7 @@ namespace Diseño.Finanzas_r
             "-- SELECCIONE OPCION --",
             "SI",
             "NO"});
-            this.CbxPropina.Location = new System.Drawing.Point(175, 132);
+            this.CbxPropina.Location = new System.Drawing.Point(175, 131);
             this.CbxPropina.Name = "CbxPropina";
             this.CbxPropina.Size = new System.Drawing.Size(186, 24);
             this.CbxPropina.TabIndex = 1;

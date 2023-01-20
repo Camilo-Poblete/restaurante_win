@@ -273,7 +273,6 @@
     <Compile Include="Reportes\Reporte_ventas.Designer.cs">
       <DependentUpon>Reporte_ventas.cs</DependentUpon>
     </Compile>
-    <None Include="Diseño_TemporaryKey.pfx" />
     <None Include="Resources\Panel_Administradores.resx">
       <DependentUpon>Panel_Administradores.cs</DependentUpon>
     </None>

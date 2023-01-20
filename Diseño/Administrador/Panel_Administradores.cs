@@ -99,7 +99,7 @@ namespace Diseño.Administrador
         }
 
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
-        {
+        { 
 
         }
 
